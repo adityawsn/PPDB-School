@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Unity School | Profil Institusi')
+@section('title', 'Unity School | Profile School')
 
 @section('content')
     <div class="flex flex-col w-full">
         <!-- HERO SECTION WITH EDITORIAL DEPTH & STATS COUNTER -->
-<section class="relative w-full bg-surface-container-lowest overflow-hidden pt-14">
+        <section class="relative w-full bg-surface-container-lowest overflow-hidden pt-14">
             <div class="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent pointer-events-none">
             </div>
             <div
@@ -24,7 +24,7 @@
                             </h1>
                         </div>
                         <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
-                            Dedicated for over 15 years to fostering a fully integrated, world class SPK educational
+                            Dedicated for over 15 years to fostering a fully integrated, world-class SPK educational
                             ecosystem spanning Early Years, Primary, Middle School, through High School uniting Cambridge
                             &amp; IB academic pathways with grounded moral leadership.
                         </p>
@@ -74,7 +74,7 @@
                                     <div class="flex items-center justify-between">
                                         <div class="flex flex-col">
                                             <span
-                                                class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">3.8-Hectare
+                                                class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">3.8 Hectare
                                                 Master Campus</span>
                                             <span class="font-headline-sm text-headline-sm text-primary">Green
                                                 Eco-Smart Learning Park</span>
@@ -86,18 +86,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Floating Stat Badge -->
-                        {{-- <div
-                    class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-4 rounded-2xl shadow-xl flex items-center gap-3">
-                    <div
-                        class="w-12 h-12 rounded-xl bg-secondary-container/20 flex items-center justify-center text-secondary">
-                        <span class="material-symbols-outlined text-[28px]">school</span>
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="font-headline-md text-headline-md text-primary font-bold">100%</span>
-                        <span class="font-label-sm text-label-sm text-on-surface-variant">University Placement Success</span>
-                    </div>
-                </div> --}}
                     </div>
                 </div>
                 <!-- Institutional Metrics Band -->
@@ -148,7 +136,7 @@
                             <span class="font-display text-display text-primary">3.8</span>
                             <span class="text-secondary font-bold text-headline-md">Ha</span>
                         </div>
-                        <span class="font-label-md text-label-md text-on-surface-variant font-semibold">Eco-Smart Green
+                        <span class="font-label-md text-label-md text-on-surface-variant font-semibold">Eco Smart Green
                             Campus</span>
                         <span class="font-body-sm text-body-sm text-on-surface-variant">Global-standard research, sports
                             &amp; auditorium facilities</span>
@@ -156,24 +144,24 @@
                 </div>
             </div>
         </section>
+
         <!-- TRANSFORMATION TIMELINE & FOUNDATION MILESTONES (2005 - 2025) -->
         <section class="w-full bg-surface py-4">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="flex flex-col md:flex-row md:items-end justify-between mb-6 gap-4">
                     <div class="flex flex-col gap-2 max-w-2xl">
-                        <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Rekam
-                            Jejak Sejarah</span>
-                        <h2 class="font-headline-xl text-headline-xl text-primary">Perjalanan Transformasi
-                            Institusi (2005 – 2025)</h2>
+                        <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Historical
+                            Milestones</span>
+                        <h2 class="font-headline-xl text-headline-xl text-primary">Institutional Transformation
+                            Journey (2005 – 2025)</h2>
                         <p class="font-body-md text-body-md text-on-surface-variant">
-                            Dari sebuah inisiatif pusat stimulasi anak usia dini hingga berkembang menjadi salah
-                            satu kompleks pendidikan internasional SPK terlengkap di Indonesia.
+                            From an early childhood development initiative into one of Indonesia’s most integrated and forward-thinking international SPK educational campuses.
                         </p>
                     </div>
                     <div
                         class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container-high text-primary font-label-md text-label-md">
                         <span class="material-symbols-outlined text-[18px]">history_edu</span>
-                        <span>16 Tahun Berinovasi Tanpa Henti</span>
+                        <span>Two Decades of Continuous Innovation</span>
                     </div>
                 </div>
                 <!-- Roadmap Bento Grid / Interactive Stepper Cards -->
@@ -189,18 +177,16 @@
                             </div>
                             <h3
                                 class="font-headline-sm text-headline-sm text-primary group-hover:text-primary-container transition-colors">
-                                Pondasi Awal &amp; Early Childhood Centre
+                                Foundations &amp; Early Childhood Centre
                             </h3>
                             <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                                Yayasan didirikan oleh para akademisi dan praktisi pendidikan. Dimulai dengan
-                                fasilitas Early Years berbasis Reggio Emilia &amp; EYFS yang memadukan pembiasaan
-                                adab dan cinta belajar sejak dini.
+                                Founded by visionary educators and academics. Commenced with an Early Years program grounded in the Reggio Emilia and UK EYFS frameworks, fostering values and a love of learning from an early age.
                             </p>
                         </div>
                         <div class="pt-6 mt-4">
                             <span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5">
                                 <span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
-                                50 Siswa Pertama &amp; Izin Resmi Kemendikbud
+                                First 50 Students &amp; Ministry Accreditation
                             </span>
                         </div>
                     </div>
@@ -215,18 +201,16 @@
                             </div>
                             <h3
                                 class="font-headline-sm text-headline-sm text-primary group-hover:text-primary-container transition-colors">
-                                Pembangunan Master Campus 3.8 Ha &amp; Cambridge Primary
+                                3.8 Ha Master Campus &amp; Cambridge Primary
                             </h3>
                             <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                                Relokasi ke kampus terpadu seluas 3.8 hektar. Resmi terakreditasi sebagai Cambridge
-                                International School dengan integrasi kurikulum Singapore CPA Math dan kurikulum
-                                nasional SPK.
+                                Relocated to a dedicated 3.8-hectare green campus. Formally accredited as a Cambridge International School integrating Singapore CPA Mathematics alongside national SPK curriculum guidelines.
                             </p>
                         </div>
                         <div class="pt-6 mt-4">
                             <span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5">
                                 <span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
-                                Akreditasi A Unggul &amp; Sertifikasi Cambridge ID1082
+                                National 'A' Rating &amp; Cambridge ID #ID1082
                             </span>
                         </div>
                     </div>
@@ -241,18 +225,16 @@
                             </div>
                             <h3
                                 class="font-headline-sm text-headline-sm text-primary group-hover:text-primary-container transition-colors">
-                                Secondary Expansion, STEAM &amp; Lab Riset Digital
+                                Secondary Expansion, STEAM &amp; Digital Labs
                             </h3>
                             <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                                Peluncuran fasilitas High School komprehensif: Science Robotics Complex, Olympic
-                                Aquatic Centre, dan program IGCSE/A-Level Pathway dengan bimbingan penempatan kampus
-                                dunia.
+                                Inaugurated advanced High School facilities: STEM Innovation Labs, an Olympic-standard aquatic centre, and complete IGCSE/A-Level pathways with individualized overseas college guidance.
                             </p>
                         </div>
                         <div class="pt-6 mt-4">
                             <span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5">
                                 <span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
-                                100% Kelulusan Cambridge IGCSE &amp; A-Level Merit
+                                100% Cambridge Examination Pass Rate
                             </span>
                         </div>
                     </div>
@@ -270,21 +252,20 @@
                                 Global Innovation Hub &amp; IB DP Candidacy
                             </h3>
                             <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                                Transformasi ke arah ekosistem AI-integrated learning, kandidat resmi IB Diploma
-                                Programme, pembentukan Pusat Studi Adab &amp; Kepemimpinan, dan kemitraan
-                                universitas top 50 dunia.
+                                Advancing into AI-integrated collaborative classrooms, official IB Diploma Programme candidacy, an ethical leadership centre, and direct pathways to top global universities.
                             </p>
                         </div>
                         <div class="pt-6 mt-4">
                             <span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1.5">
                                 <span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
-                                International University Placement Hub Mandiri
+                                Global College Advisory &amp; Placement Hub
                             </span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- VISION, MISSION & 6 CORE GRADUATE ATTRIBUTES -->
         <section class="w-full bg-surface-container-low py-8">
             <div class="max-w-7xl mx-auto px-6">
@@ -300,15 +281,13 @@
                             <div
                                 class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container text-on-primary-container w-fit font-label-sm text-label-sm uppercase tracking-wider">
                                 <span class="material-symbols-outlined text-[16px]">visibility</span>
-                                Visi Utama 2035
+                                Strategic Vision 2035
                             </div>
                             <h3 class="font-headline-lg text-headline-lg leading-tight">
-                                Menjadi kiblat institusi pendidikan internasional yang melahirkan generasi
-                                berintegritas tinggi, berwawasan global, dan berakar pada nilai keluhuran adab.
+                                To be a premier international institution cultivating ethical leaders of integrity, global breadth, and profound character.
                             </h3>
                             <p class="font-body-md text-body-md text-primary-fixed-dim leading-relaxed">
-                                Memimpin transformasi pendidikan holistik yang menyelaraskan capaian akademik
-                                berstandar dunia dengan kesadaran spiritual, sosial, dan kecakapan masa depan.
+                                Spearheading holistic educational excellence that harmonizes rigorous world standards with cultural consciousness, empathy, and future-proof adaptability.
                             </p>
                         </div>
                         <div class="pt-8 relative z-10 flex items-center gap-4">
@@ -320,8 +299,8 @@
                             <div class="flex flex-col">
                                 <span class="font-label-md text-label-md text-on-primary">World-Class
                                     Standard</span>
-                                <span class="font-body-sm text-body-sm text-primary-fixed-dim">Diakui secara formal
-                                    oleh konsorsium global</span>
+                                <span class="font-body-sm text-body-sm text-primary-fixed-dim">Formally validated
+                                    by premier international consortia</span>
                             </div>
                         </div>
                     </div>
@@ -329,10 +308,9 @@
                     <div class="lg:col-span-7 flex flex-col gap-6 justify-center">
                         <div class="flex flex-col gap-2">
                             <span
-                                class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Catur
-                                Misi Institusi</span>
-                            <h3 class="font-headline-xl text-headline-xl text-primary">Empat Pilar Fondasi
-                                Pendidikan Unity</h3>
+                                class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Institutional
+                                Mission</span>
+                            <h3 class="font-headline-xl text-headline-xl text-primary">The Four Core Pillars of Unity Education</h3>
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
@@ -340,11 +318,9 @@
                                     class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary">
                                     <span class="material-symbols-outlined text-[20px]">menu_book</span>
                                 </div>
-                                <h4 class="font-headline-sm text-headline-sm text-primary">Rigour Akademik Global
-                                </h4>
+                                <h4 class="font-headline-sm text-headline-sm text-primary">Global Academic Rigour</h4>
                                 <p class="font-body-sm text-body-sm text-on-surface-variant">
-                                    Mengintegrasikan kurikulum Cambridge, kurikulum nasional, dan persiapan IB
-                                    dengan metodologi inkuiri mendalam.
+                                    Integrating Cambridge, national standards, and IB diploma frameworks with inquiry-based critical learning.
                                 </p>
                             </div>
                             <div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
@@ -352,11 +328,9 @@
                                     class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
                                     <span class="material-symbols-outlined text-[20px]">favorite</span>
                                 </div>
-                                <h4 class="font-headline-sm text-headline-sm text-primary">Karakter &amp; Adab
-                                    Moral</h4>
+                                <h4 class="font-headline-sm text-headline-sm text-primary">Integrity &amp; Moral Excellence</h4>
                                 <p class="font-body-sm text-body-sm text-on-surface-variant">
-                                    Menanamkan akhlak mulia, empati sosial, dan program Tahfidz tematik sebagai
-                                    poros pembentukan identitas diri.
+                                    Instilling civic empathy, principled leadership, and character development as the cornerstone of student growth.
                                 </p>
                             </div>
                             <div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
@@ -364,11 +338,9 @@
                                     class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
                                     <span class="material-symbols-outlined text-[20px]">language</span>
                                 </div>
-                                <h4 class="font-headline-sm text-headline-sm text-primary">Kemahiran Multilingual
-                                </h4>
+                                <h4 class="font-headline-sm text-headline-sm text-primary">Multilingual Fluency</h4>
                                 <p class="font-body-sm text-body-sm text-on-surface-variant">
-                                    Ekosistem 100% imersi Bahasa Inggris aktif diperkaya dengan penguasaan Bahasa
-                                    Mandarin praktis dan Bahasa Arab dasar.
+                                    A full English immersion environment enriched by communicative Mandarin and foundational Arabic language literacy.
                                 </p>
                             </div>
                             <div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
@@ -376,11 +348,9 @@
                                     class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary-container">
                                     <span class="material-symbols-outlined text-[20px]">precision_manufacturing</span>
                                 </div>
-                                <h4 class="font-headline-sm text-headline-sm text-primary">Kreativitas STEAM &amp;
-                                    AI</h4>
+                                <h4 class="font-headline-sm text-headline-sm text-primary">STEAM &amp; AI Innovation</h4>
                                 <p class="font-body-sm text-body-sm text-on-surface-variant">
-                                    Membina nalar komputasional, literasi kecerdasan artifisial, dan rekayasa desain
-                                    melalui Maker Space modern.
+                                    Developing algorithmic reasoning, artificial intelligence competence, and hands-on engineering via modern maker spaces.
                                 </p>
                             </div>
                         </div>
@@ -391,18 +361,17 @@
                     <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
                         <div class="flex flex-col gap-2">
                             <span
-                                class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Profil
-                                Lulusan</span>
+                                class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Graduate
+                                Profile</span>
                             <h3 class="font-headline-lg text-headline-lg text-primary">Unity Graduate Learner
-                                Profile (6 Karakter Utama)</h3>
+                                Profile (6 Core Attributes)</h3>
                             <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
-                                Setiap program pembelajaran dirancang secara sengaja untuk membangun enam profil
-                                khas yang menjadi ciri utama setiap pembelajar Unity School International.
+                                Curricula across all age groups are deliberately architected to cultivate six defining attributes in every Unity graduate.
                             </p>
                         </div>
                         <span
                             class="px-3.5 py-1.5 rounded-xl bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
-                            Inspirasi Standar IB &amp; Nilai Kearifan Lokal
+                            Inspired by IB Standards &amp; Ethical Wisdom
                         </span>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -413,8 +382,8 @@
                             </div>
                             <div class="flex flex-col gap-1">
                                 <h4 class="font-headline-sm text-headline-sm text-primary">Inquiring Thinkers</h4>
-                                <p class="font-body-sm text-body-sm text-on-surface-variant">Gemar meneliti,
-                                    berpikir kritis, memecahkan masalah kompleks dengan pendekatan multidisiplin.
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                                    Driven by intellectual curiosity, structured problem-solving, and multidisciplinary analytical thinking.
                                 </p>
                             </div>
                         </div>
@@ -425,8 +394,8 @@
                             </div>
                             <div class="flex flex-col gap-1">
                                 <h4 class="font-headline-sm text-headline-sm text-primary">Principled Leaders</h4>
-                                <p class="font-body-sm text-body-sm text-on-surface-variant">Memegang integritas
-                                    moral, amanah, menjunjung keadilan, dan bertanggung jawab atas setiap tindakan.
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                                    Acting with personal integrity, fairness, mutual respect, and accountability for their communities.
                                 </p>
                             </div>
                         </div>
@@ -436,10 +405,10 @@
                                 <span class="material-symbols-outlined text-[22px]">diversity_1</span>
                             </div>
                             <div class="flex flex-col gap-1">
-                                <h4 class="font-headline-sm text-headline-sm text-primary">Compassionate Citizens
-                                </h4>
-                                <p class="font-body-sm text-body-sm text-on-surface-variant">Memiliki kepekaan rasa
-                                    (empathy), aktif dalam aksi sosial, peduli lingkungan dan kemanusiaan.</p>
+                                <h4 class="font-headline-sm text-headline-sm text-primary">Compassionate Citizens</h4>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                                    Demonstrating deep social empathy, active engagement in community outreach, and care for sustainable living.
+                                </p>
                             </div>
                         </div>
                         <div class="p-5 rounded-2xl bg-surface-container-low flex items-start gap-4">
@@ -449,8 +418,8 @@
                             </div>
                             <div class="flex flex-col gap-1">
                                 <h4 class="font-headline-sm text-headline-sm text-primary">Agile Communicators</h4>
-                                <p class="font-body-sm text-body-sm text-on-surface-variant">Fasih mengekspresikan
-                                    gagasan dalam berbagai bahasa, berani berdialog, dan menghargai perspektif lain.
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                                    Articulating ideas confidently across multiple languages, listening actively, and respecting diverse viewpoints.
                                 </p>
                             </div>
                         </div>
@@ -461,8 +430,9 @@
                             </div>
                             <div class="flex flex-col gap-1">
                                 <h4 class="font-headline-sm text-headline-sm text-primary">Culturally Rooted</h4>
-                                <p class="font-body-sm text-body-sm text-on-surface-variant">Bangga akan identitas
-                                    kebangsaan dan nilai tradisi luhur di tengah keterbukaan global.</p>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                                    Grounded in cultural heritage and ethical traditions while engaging openly as proactive global citizens.
+                                </p>
                             </div>
                         </div>
                         <div class="p-5 rounded-2xl bg-surface-container-low flex items-start gap-4">
@@ -471,10 +441,9 @@
                                 <span class="material-symbols-outlined text-[22px]">rocket_launch</span>
                             </div>
                             <div class="flex flex-col gap-1">
-                                <h4 class="font-headline-sm text-headline-sm text-primary">Future-Ready Innovators
-                                </h4>
-                                <p class="font-body-sm text-body-sm text-on-surface-variant">Adaptif terhadap
-                                    disrupsi teknologi, lincah berinovasi, dan memiliki jiwa kepemimpinan wirausaha.
+                                <h4 class="font-headline-sm text-headline-sm text-primary">Future-Ready Innovators</h4>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                                    Adaptable to technological evolution, entrepreneurial in mindset, and inventive in addressing real-world needs.
                                 </p>
                             </div>
                         </div>
@@ -482,17 +451,16 @@
                 </div>
             </div>
         </section>
+
         <!-- 4 INTEGRATED ACADEMIC STAGES CONTINUUM -->
         <section class="w-full bg-surface py-2">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-4 gap-3">
-                    <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Ekosistem
-                        K-12 Terpadu</span>
-                    <h2 class="font-headline-xl text-headline-xl text-primary">Kontinum Pendidikan 4 Jenjang yang
-                        Berkelanjutan</h2>
+                    <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Integrated
+                        K-12 Ecosystem</span>
+                    <h2 class="font-headline-xl text-headline-xl text-primary">A Seamless Four-Tier Educational Continuum</h2>
                     <p class="font-body-md text-body-md text-on-surface-variant">
-                        Peralihan antar jenjang yang mulus tanpa stres seleksi ulang internal. Anak Anda didampingi
-                        dari usia emas bermain hingga siap menembus kampus impian dunia.
+                        Smooth inter-tier transitions without the friction of external re-assessments. Students are supported from early sensory discovery through to top university matriculation.
                     </p>
                 </div>
                 <!-- 4 Stages Cards Grid -->
@@ -503,36 +471,36 @@
                         <div class="flex flex-col gap-4">
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="px-3 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-bold">Usia
-                                    3 - 5 Tahun</span>
+                                    class="px-3 py-1 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-bold">Ages
+                                    3 - 5 Years</span>
                                 <span class="text-on-surface-variant font-label-sm text-label-sm">Kindergarten</span>
                             </div>
                             <div class="flex flex-col gap-1">
                                 <h3
                                     class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">
                                     Early Years Foundation</h3>
-                                <p class="font-body-sm text-body-sm text-on-surface-variant">Eksplorasi sensorik,
-                                    imersif bahasa Inggris natural, dan adab kasih sayang.</p>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">Sensory discovery,
+                                    natural English immersion, and social empathy.</p>
                             </div>
                             <div class="flex flex-col gap-2 pt-2">
                                 <div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
                                     <span class="material-symbols-outlined text-[16px] text-secondary">check</span>
-                                    <span>EYFS British Curriculum</span>
+                                    <span>EYFS British Curriculum Framework</span>
                                 </div>
                                 <div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
                                     <span class="material-symbols-outlined text-[16px] text-secondary">check</span>
-                                    <span>Jolly Phonics &amp; Play Inkuiri</span>
+                                    <span>Jolly Phonics &amp; Play Inquiry</span>
                                 </div>
                                 <div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
                                     <span class="material-symbols-outlined text-[16px] text-secondary">check</span>
-                                    <span>Toilet Training &amp; Self-Help</span>
+                                    <span>Independence &amp; Self-Help Skills</span>
                                 </div>
                             </div>
                         </div>
                         <div class="pt-6 mt-4">
                             <a class="flex items-center justify-between font-label-md text-label-md text-primary group-hover:text-secondary"
                                 data-path="academic-programs" href="#">
-                                <span>Kurikulum Lengkap</span>
+                                <span>Academic Details</span>
                                 <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
                             </a>
                         </div>
@@ -545,15 +513,15 @@
                                 <span
                                     class="px-3 py-1 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-bold">Grades
                                     1 – 5</span>
-                                <span class="text-on-surface-variant font-label-sm text-label-sm">Sekolah
-                                    Dasar</span>
+                                <span class="text-on-surface-variant font-label-sm text-label-sm">Primary
+                                    School</span>
                             </div>
                             <div class="flex flex-col gap-1">
                                 <h3
                                     class="font-headline-sm text-headline-sm text-primary group-hover:text-tertiary transition-colors">
                                     Cambridge Primary</h3>
-                                <p class="font-body-sm text-body-sm text-on-surface-variant">Fondasi nalar logika,
-                                    kebiasaan literasi tinggi, dan pemecahan masalah.</p>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">Logical inquiry,
+                                    strong literary habits, and hands-on scientific investigation.</p>
                             </div>
                             <div class="flex flex-col gap-2 pt-2">
                                 <div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
@@ -562,18 +530,18 @@
                                 </div>
                                 <div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
                                     <span class="material-symbols-outlined text-[16px] text-tertiary">check</span>
-                                    <span>Singapore Math CPA Method</span>
+                                    <span>Singapore Math CPA Methodology</span>
                                 </div>
                                 <div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
                                     <span class="material-symbols-outlined text-[16px] text-tertiary">check</span>
-                                    <span>Science Hands-on Lab Inquiry</span>
+                                    <span>Hands-On Experimental Science</span>
                                 </div>
                             </div>
                         </div>
                         <div class="pt-6 mt-4">
                             <a class="flex items-center justify-between font-label-md text-label-md text-primary group-hover:text-tertiary"
                                 data-path="academic-programs" href="#">
-                                <span>Kurikulum Lengkap</span>
+                                <span>Academic Details</span>
                                 <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
                             </a>
                         </div>
@@ -586,20 +554,20 @@
                                 <span
                                     class="px-3 py-1 rounded-full bg-primary-container/10 text-primary-container font-label-sm text-label-sm font-bold">Grades
                                     6 – 8</span>
-                                <span class="text-on-surface-variant font-label-sm text-label-sm">SMP
-                                    Internasional</span>
+                                <span class="text-on-surface-variant font-label-sm text-label-sm">Middle
+                                    School</span>
                             </div>
                             <div class="flex flex-col gap-1">
                                 <h3
                                     class="font-headline-sm text-headline-sm text-primary group-hover:text-primary-container transition-colors">
                                     Cambridge Lower Secondary</h3>
-                                <p class="font-body-sm text-body-sm text-on-surface-variant">Pematangan cara
-                                    berpikir analitis, kepemimpinan sosial, dan proyek riset.</p>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">Analytical thinking,
+                                    leadership engagement, and independent research projects.</p>
                             </div>
                             <div class="flex flex-col gap-2 pt-2">
                                 <div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
                                     <span class="material-symbols-outlined text-[16px] text-primary">check</span>
-                                    <span>Cambridge Checkpoint Exam</span>
+                                    <span>Cambridge Checkpoint Standards</span>
                                 </div>
                                 <div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
                                     <span class="material-symbols-outlined text-[16px] text-primary">check</span>
@@ -607,14 +575,14 @@
                                 </div>
                                 <div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
                                     <span class="material-symbols-outlined text-[16px] text-primary">check</span>
-                                    <span>Model United Nations (MUN)</span>
+                                    <span>Model United Nations (MUN) Program</span>
                                 </div>
                             </div>
                         </div>
                         <div class="pt-6 mt-4">
                             <a class="flex items-center justify-between font-label-md text-label-md text-primary group-hover:text-primary-container"
                                 data-path="academic-programs" href="#">
-                                <span>Kurikulum Lengkap</span>
+                                <span>Academic Details</span>
                                 <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
                             </a>
                         </div>
@@ -627,15 +595,14 @@
                                 <span
                                     class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold">Grades
                                     9 – 12</span>
-                                <span class="text-on-surface-variant font-label-sm text-label-sm">SMA &amp; IB
-                                    DP</span>
+                                <span class="text-on-surface-variant font-label-sm text-label-sm">High School &amp; IB DP</span>
                             </div>
                             <div class="flex flex-col gap-1">
                                 <h3
                                     class="font-headline-sm text-headline-sm text-primary group-hover:text-primary-container transition-colors">
                                     IGCSE, A-Levels &amp; IB</h3>
-                                <p class="font-body-sm text-body-sm text-on-surface-variant">Jalur akselerasi
-                                    penerimaan universitas dunia dengan portofolio riset personal.</p>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">Accelerated admission
+                                    pathways to elite universities supported by personal research portfolios.</p>
                             </div>
                             <div class="flex flex-col gap-2 pt-2">
                                 <div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
@@ -644,18 +611,18 @@
                                 </div>
                                 <div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
                                     <span class="material-symbols-outlined text-[16px] text-primary">check</span>
-                                    <span>Kandidat IB Diploma Programme</span>
+                                    <span>IB Diploma Candidate Pathway</span>
                                 </div>
                                 <div class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm">
                                     <span class="material-symbols-outlined text-[16px] text-primary">check</span>
-                                    <span>1-on-1 Overseas College Counselor</span>
+                                    <span>1-on-1 Overseas College Counseling</span>
                                 </div>
                             </div>
                         </div>
                         <div class="pt-6 mt-4">
                             <a class="flex items-center justify-between font-label-md text-label-md text-primary group-hover:text-primary-container"
                                 data-path="academic-programs" href="#">
-                                <span>Kurikulum Lengkap</span>
+                                <span>Academic Details</span>
                                 <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
                             </a>
                         </div>
@@ -670,181 +637,156 @@
                             <span class="material-symbols-outlined text-[26px]">family_restroom</span>
                         </div>
                         <div class="flex flex-col">
-                            <h4 class="font-headline-sm text-headline-sm text-primary">Keistimewaan Internal
-                                Continuum &amp; Legacy Benefit</h4>
-                            <p class="font-body-sm text-body-sm text-on-surface-variant">Siswa Unity berhak atas
-                                prioritas kenaikan jenjang otomatis bebas tes seleksi serta potongan Uang Pangkal
-                                Sibling 15%.</p>
+                            <h4 class="font-headline-sm text-headline-sm text-primary">Internal Continuum &amp; Legacy Privileges</h4>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant">Unity students enjoy automatic promotion priority, waived external re-entry testing, and a 15% Sibling Privilege reduction on Development Fees.</p>
                         </div>
                     </div>
                     <a class="whitespace-nowrap px-5 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all"
                         data-path="tuition-and-scholarships" href="#">
-                        Pelajari Skema Beasiswa &amp; Sibling
+                        Explore Scholarships &amp; Sibling Benefits
                     </a>
                 </div>
             </div>
         </section>
+
         <!-- LEADERSHIP, BOARD OF TRUSTEES & ACADEMIC ADVISORY -->
         <section class="w-full py-4 px-4 lg:px-8 bg-surface-container-low" id="struktur-pengurus">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center max-w-3xl mx-auto mb-0">
-                    <span class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wider">Amanah
-                        &amp; Keteladanan</span>
-                    <h2 class="font-headline-xl text-headline-xl text-primary font-bold mt-2">Dewan Pembina &amp;
-                        Pimpinan Manajemen</h2>
+                    <span class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wider">Governance
+                        &amp; Exemplary Leadership</span>
+                    <h2 class="font-headline-xl text-headline-xl text-primary font-bold mt-2">Board of Trustees &amp; Executive Leadership</h2>
                     <p class="font-body-md text-body-md text-on-surface-variant mt-3">
-                        Dipimpin oleh akademisi, ulama, dan profesional berpengalaman yang mengabdikan ilmu dan
-                        keahlian untuk kemajuan generasi Islam masa depan.
+                        Guided by experienced academics, scholars, and executive leaders dedicated to cultivating future-ready students of exceptional character.
                     </p>
                 </div>
-                <!-- Sambutan Ketua Yayasan (Featured Banner) -->
+                <!-- Leadership Address (Featured Banner) -->
                 <div class="bg-surface-container-lowest rounded-3xl p-8 lg:p-12 shadow-sm mb-4">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                         <div class="lg:col-span-4 flex flex-col items-center text-center">
                             <div
                                 class="relative w-48 h-48 lg:w-56 lg:h-56 rounded-2xl overflow-hidden shadow-md bg-surface-container">
                                 <img class="w-full h-full object-cover"
-                                    data-alt="Warm and authoritative portrait photo of Prof. Dr. KH. Ahmad Syafii, M.A., an elderly respected Indonesian Muslim scholar and educator with modest peci cap and institutional academic attire, serene and compassionate expression, high-end studio portrait lighting."
+                                    data-alt="Portrait photo of Prof. Dr. KH. Ahmad Syafii, M.A., senior respected Indonesian scholar and educator with formal academic attire."
                                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAivufk0SOsBatmIwQAR_GPFK3yyhfIavWS-9Uai1OOKEpU0EgSenk9W-xUMQRVD34DYzugBDGn2wjAML7Sr93WJt7F1XT97YNizK2q-iAHEXeDRjkxhZscPTE4wsnHRWIfiUa3D5lTdZ5IDfBHJgUEIq_i5bkNnf5A0cwy1gttfBfVAWQOoFMlA8f57XDssq6BtwLQTnISpLrfc6C5QehcRQDiOIDWWTTdevuxxZCOWVBAOEYk4V9p" />
                             </div>
                             <h3 class="font-headline-sm text-headline-sm text-primary font-bold mt-4">Prof. Dr. KH.
                                 Ahmad Syafii, M.A.</h3>
-                            <span class="font-label-sm text-label-sm text-secondary font-semibold">Ketua Umum
-                                Yayasan Insan Utama</span>
-                            <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Guru Besar Pendidikan
-                                Islam &amp; Anggota Dewan Pertimbangan Pendidikan</p>
+                            <span class="font-label-sm text-label-sm text-secondary font-semibold">Chairman of the Foundation</span>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Professor of Education &amp; National Education Advisory Council Member</p>
                         </div>
                         <div class="lg:col-span-8 flex flex-col gap-4">
                             <div class="flex items-center gap-2 text-secondary">
                                 <span class="material-symbols-outlined text-[28px]">format_quote</span>
-                                <span class="font-label-lg text-label-lg font-bold">Kutipan Amanah
-                                    Pendidikan</span>
+                                <span class="font-label-lg text-label-lg font-bold">Leadership Educational Message</span>
                             </div>
                             <blockquote class="font-body-lg text-body-lg text-on-surface leading-relaxed italic">
-                                “Mendidik anak bukanlah sekadar mengisi cawan kosong dengan aneka rumus matematika
-                                dan teori sains. Mendidik adalah menyalakan pelita tauhid di dalam hati nurani
-                                mereka, lalu membekali mereka dengan akal sehat, adab mulia, dan keterampilan hidup
-                                sehingga mereka berdiri tegak di tengah peradaban modern sebagai muslim yang
-                                bermartabat dan menebar rahmat.”
+                                “Educating children is never about merely filling an empty vessel with formulas and scientific theories. Education means kindling the light of wisdom, moral discernment, and purpose in their hearts—equipping them with critical minds, virtuous character, and practical competencies so they stand upright in global society as dignified, impactful leaders.”
                             </blockquote>
                             <p class="font-body-md text-body-md text-on-surface-variant">
-                                Di Yayasan Insan Utama, kami memandang amanah dari setiap orang tua sebagai sebuah
-                                titipan suci. Setiap rupiah infak dan SPP yang dipercayakan kami kembalikan dalam
-                                bentuk peningkatan kualitas guru, fasilitas bermutu, dan lingkungan yang steril dari
-                                hal-hal destruktif bagi jiwa anak-anak kita.
+                                At Unity Education Foundation, we regard every parent’s trust as a sacred stewardship. Every resource entrusted to our institution is reinvested directly into world-class teacher development, advanced academic facilities, and a secure environment that nurtures our students' potential.
                             </p>
                             <div class="pt-4 flex items-center gap-6">
                                 <div class="flex items-center gap-2">
                                     <span class="material-symbols-outlined text-[20px] text-tertiary">check_circle</span>
-                                    <span class="font-label-sm text-label-sm text-on-surface font-semibold">Integritas
-                                        Akademik</span>
+                                    <span class="font-label-sm text-label-sm text-on-surface font-semibold">Academic Integrity</span>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <span class="material-symbols-outlined text-[20px] text-tertiary">check_circle</span>
-                                    <span class="font-label-sm text-label-sm text-on-surface font-semibold">Keteladanan
-                                        Guru</span>
+                                    <span class="font-label-sm text-label-sm text-on-surface font-semibold">Exemplary Faculty</span>
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <span class="material-symbols-outlined text-[20px] text-tertiary">check_circle</span>
-                                    <span class="font-label-sm text-label-sm text-on-surface font-semibold">Transparansi
-                                        Wakaf</span>
+                                    <span class="font-label-sm text-label-sm text-on-surface font-semibold">Transparent Governance</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Dewan Pembina & Manajemen Inti 4-Card Grid -->
+                <!-- Board of Trustees & Executive Management Grid -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- Pengurus 1 -->
+                    <!-- Leader 1 -->
                     <div
                         class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col items-center text-center">
                         <div class="w-24 h-24 rounded-full overflow-hidden mb-4 bg-surface-container shadow-inner">
                             <img class="w-full h-full object-cover"
-                                data-alt="Professional portrait of Ir. H. Ridwan Mansyur, M.M., Chairman of the Board of Trustees, distinguished senior Indonesian engineer and educational philanthropist in smart formal batik shirt."
+                                data-alt="Professional portrait of Ir. H. Ridwan Mansyur, M.M., Chairman of the Board of Trustees in formal batik shirt."
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfh8g1nKUfLIVC_rDQIwWSmSR6FlqlJq-SswZyFdxwmO6Q9DrohA7mTsvx2pu6bW9nBYS3IdHEJgU7JdpX80YfiG0e8D99XEf2siUdzKghmR7oX9AsUBeW9aOBpxCxZbdcpvVicxhsyBIVe4dR2mspGvrIIDQKfd5sosMo1OltSHoxCX5jOiVxgMzTR0lvOH2NBdyRRTniXcHTnadYn1n6mnJiNXcGFzsJmzy522fSdOU0zpHNfbBm" />
                         </div>
                         <h4 class="font-headline-sm text-headline-sm text-primary font-bold">Ir. H. Ridwan Mansyur,
                             M.M.</h4>
-                        <span class="font-label-sm text-label-sm text-secondary font-bold mt-1">Ketua Dewan
-                            Pembina</span>
+                        <span class="font-label-sm text-label-sm text-secondary font-bold mt-1">Chairman of the Board of Trustees</span>
                         <p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
-                            Praktisi manajemen korporasi &amp; pengembang wakaf produktif yayasan selama lebih dari
-                            20 tahun.
+                            Corporate governance strategist and educational asset developer with over 20 years of institutional leadership experience.
                         </p>
                     </div>
-                    <!-- Pengurus 2 -->
+                    <!-- Leader 2 -->
                     <div
                         class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col items-center text-center">
                         <div class="w-24 h-24 rounded-full overflow-hidden mb-4 bg-surface-container shadow-inner">
                             <img class="w-full h-full object-cover"
-                                data-alt="Professional portrait of Dr. Hj. Nur Laila, M.Pd., Director of Education and Quality Assurance, intelligent Indonesian woman educator wearing neat modern hijab and blazer."
+                                data-alt="Professional portrait of Dr. Hj. Nur Laila, M.Pd., Director of Education and Quality Assurance."
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9wUlEmckrJhMTFjb4KvDncCypquhN39R2HFzjJbw-qBBnBFFFyuSrPgc9PbZZW30Z0WQOjF8BFmoQ2NIlS7_LT9wxAA3zNQl1uRQf2rzz-w9IBrscFYuIRPcs7vnNWlH0g-xHS5Zgr10TD56sclW-fVozuEHDojaVteTAGl4t8hqlu5wAVeOyBonpfbykh0mCNH51pnHUmavLddfa0J9CI__xUSwpvQxldqwRDl5BlRK6RR9Dk_-d" />
                         </div>
                         <h4 class="font-headline-sm text-headline-sm text-primary font-bold">Dr. Hj. Nur Laila,
                             M.Pd.</h4>
-                        <span class="font-label-sm text-label-sm text-secondary font-bold mt-1">Direktur Pendidikan
-                            &amp; Mutu</span>
+                        <span class="font-label-sm text-label-sm text-secondary font-bold mt-1">Director of Academic Quality</span>
                         <p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
-                            Pakar kurikulum terpadu, asesor BAN-S/M, serta pengawas standarisasi pengajaran 4 unit
-                            jenjang.
+                            Integrated curriculum specialist, certified accreditation assessor, and pedagogical supervisor across all 4 school divisions.
                         </p>
                     </div>
-                    <!-- Pengurus 3 -->
+                    <!-- Leader 3 -->
                     <div
                         class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col items-center text-center">
                         <div class="w-24 h-24 rounded-full overflow-hidden mb-4 bg-surface-container shadow-inner">
                             <img class="w-full h-full object-cover"
-                                data-alt="Friendly professional portrait of Ust. H. Salman Faris, Lc., M.Ag., Director of Pesantren and Tahfidz, Islamic scholar holding Arabic cert wearing neat modest koko shirt."
+                                data-alt="Professional portrait of Ust. H. Salman Faris, Lc., M.Ag., Director of Ethics and Student Welfare."
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo9YFJ03DIzHgt9L3FqSkJpdI-PoiJbQ1rVX4l8Olu68-JiAKGxWlUacfTcZaiKVQ3jpZNFEVAnW7C5ep83s5w-CWNgFcBpkAGdV-tx-hN2-K120mPJrDgvhsbEyK1jtWasdoIAYtHhcU45zF5s9MlmqWGPS51vewv_-ukfRC4twWH5DPz9fEorkeJdQDAgBES2ZwDbKqOwD3jRvRLKa9sGegmjzF9hIgzHv7ZGlg56DQFnUKMsP5d" />
                         </div>
                         <h4 class="font-headline-sm text-headline-sm text-primary font-bold">Ust. H. Salman Faris,
                             Lc., M.Ag.</h4>
-                        <span class="font-label-sm text-label-sm text-secondary font-bold mt-1">Direktur
-                            Kepesantrenan &amp; Tahfidz</span>
+                        <span class="font-label-sm text-label-sm text-secondary font-bold mt-1">Director of Ethics &amp; Character</span>
                         <p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
-                            Alumnus Universitas Al-Azhar Kairo, pemegang sanad Al-Qur'an 30 Juz bersambung ke
-                            Rasulullah SAW.
+                            Al-Azhar University Cairo alumnus, certified scholar, and director of student moral development and spiritual cultivation.
                         </p>
                     </div>
-                    <!-- Pengurus 4 -->
+                    <!-- Leader 4 -->
                     <div
                         class="bg-surface-container-lowest p-6 rounded-2xl shadow-sm flex flex-col items-center text-center">
                         <div class="w-24 h-24 rounded-full overflow-hidden mb-4 bg-surface-container shadow-inner">
                             <img class="w-full h-full object-cover"
-                                data-alt="Professional portrait of Hendro Kusumo, S.E., Ak., Director of Finance and Waqf Assets, professional certified accountant in sleek business attire."
+                                data-alt="Professional portrait of Hendro Kusumo, S.E., Ak., Director of Finance."
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuA63iB5Mx9_712O-UMWZreYaFYG4fcsR2gCx4YNvZBuEdvCOPVsBXQYLU-rjeO5xZibZW21Z_SzyqF72aVyKxWqX-WBL6jhVPMXCdAhL-SDbGTHql8AoZrsu5GHC9acKgyDCoeDvPTfmHQ0c4FaAfdK0DSCJxNKSYYuQC0JmTTNW6LO8PpMPCwm3iPc7RsA9zKz7zPGtmkCbbHywpgVcs-M-XfpMqIz5U3ISlSsqkRxjCYxtiQYmeuf" />
                         </div>
                         <h4 class="font-headline-sm text-headline-sm text-primary font-bold">Hendro Kusumo, S.E.,
                             Ak.</h4>
-                        <span class="font-label-sm text-label-sm text-secondary font-bold mt-1">Direktur Keuangan
-                            &amp; Aset Wakaf</span>
+                        <span class="font-label-sm text-label-sm text-secondary font-bold mt-1">Director of Finance &amp; Operations</span>
                         <p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
-                            Mantan praktisi perbankan syariah nasional yang menjamin akuntabilitas audit keuangan
-                            WTP yayasan.
+                            Certified accountant with seasoned banking executive background, ensuring institutional fiscal integrity and clean external audits.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- ACCREDITATION, LEGAL COMPLIANCE & GOVERNANCE TRANSPARENCY -->
         <section class="w-full bg-surface py-4">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
                     <div class="flex flex-col gap-2 max-w-2xl">
                         <span
-                            class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Legitimasi
-                            &amp; Akreditasi</span>
-                        <h2 class="font-headline-xl text-headline-xl text-primary">Standar Akreditasi Dunia &amp;
-                            Transparansi Tata Kelola</h2>
+                            class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Accreditation
+                            &amp; Legal Compliance</span>
+                        <h2 class="font-headline-xl text-headline-xl text-primary">Global Accreditations &amp;
+                            Governance Transparency</h2>
                         <p class="font-body-md text-body-md text-on-surface-variant">
-                            Yayasan Bina Generasi Unity beroperasi dengan kepatuhan hukum penuh terhadap regulasi
-                            Satuan Pendidikan Kerjasama (SPK) Republik Indonesia dan lembaga akreditasi global.
+                            Unity Education Foundation operates with full regulatory compliance under Indonesian Satuan Pendidikan Kerjasama (SPK) statutes and premier global accrediting bodies.
                         </p>
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></span>
-                        <span class="font-label-sm text-label-sm text-tertiary font-bold uppercase">Semua Izin
-                            Berstatus Aktif &amp; Valid</span>
+                        <span class="font-label-sm text-label-sm text-tertiary font-bold uppercase">All Licenses
+                            Active &amp; Certified</span>
                     </div>
                 </div>
                 <!-- Credentials Bento Grid -->
@@ -856,13 +798,9 @@
                             <span class="material-symbols-outlined text-[26px]">verified</span>
                         </div>
                         <div class="flex flex-col gap-1">
-                            <h4 class="font-headline-sm text-headline-sm text-primary">Cambridge International
-                                School</h4>
-                            <span class="font-label-sm text-label-sm text-secondary font-semibold">Registered
-                                Centre ID #ID1082</span>
-                            <p class="font-body-sm text-body-sm text-on-surface-variant">Otoritas resmi
-                                penyelenggaraan Cambridge Primary, Lower Secondary, IGCSE, serta AS &amp; A Level
-                                Exams.</p>
+                            <h4 class="font-headline-sm text-headline-sm text-primary">Cambridge International School</h4>
+                            <span class="font-label-sm text-label-sm text-secondary font-semibold">Registered Centre ID #ID1082</span>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant">Officially licensed to deliver Cambridge Primary, Lower Secondary, IGCSE, and AS &amp; A Level international curricula.</p>
                         </div>
                     </div>
                     <!-- Credential 2 -->
@@ -872,12 +810,9 @@
                             <span class="material-symbols-outlined text-[26px]">stars</span>
                         </div>
                         <div class="flex flex-col gap-1">
-                            <h4 class="font-headline-sm text-headline-sm text-primary">Akreditasi BAN-S/M Grade A
-                                (Unggul)</h4>
-                            <span class="font-label-sm text-label-sm text-tertiary font-semibold">Nilai Rata-rata
-                                98/100 (Semua Jenjang)</span>
-                            <p class="font-body-sm text-body-sm text-on-surface-variant">Izin operasional SPK resmi
-                                dari Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi RI.</p>
+                            <h4 class="font-headline-sm text-headline-sm text-primary">National Accreditation: Grade 'A'</h4>
+                            <span class="font-label-sm text-label-sm text-tertiary font-semibold">Exemplary Rating (All Divisions)</span>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant">Official SPK operating license granted by the Ministry of Education, Culture, Research, and Technology of Indonesia.</p>
                         </div>
                     </div>
                     <!-- Credential 3 -->
@@ -887,13 +822,9 @@
                             <span class="material-symbols-outlined text-[26px]">public</span>
                         </div>
                         <div class="flex flex-col gap-1">
-                            <h4 class="font-headline-sm text-headline-sm text-primary">IB World Candidate School
-                            </h4>
-                            <span class="font-label-sm text-label-sm text-secondary font-semibold">International
-                                Baccalaureate (IB DP)</span>
-                            <p class="font-body-sm text-body-sm text-on-surface-variant">Dalam proses kandidasi
-                                tahap akhir implementasi kurikulum International Baccalaureate Diploma Programme.
-                            </p>
+                            <h4 class="font-headline-sm text-headline-sm text-primary">IB World Candidate School</h4>
+                            <span class="font-label-sm text-label-sm text-secondary font-semibold">International Baccalaureate (IB DP)</span>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant">In candidate status for authorized implementation of the internationally recognized International Baccalaureate Diploma Programme.</p>
                         </div>
                     </div>
                     <!-- Credential 4 -->
@@ -903,12 +834,9 @@
                             <span class="material-symbols-outlined text-[26px]">approval_delegation</span>
                         </div>
                         <div class="flex flex-col gap-1">
-                            <h4 class="font-headline-sm text-headline-sm text-primary">WASC Accreditation Candidate
-                            </h4>
-                            <span class="font-label-sm text-label-sm text-primary font-semibold">Western
-                                Association of Schools and Colleges</span>
-                            <p class="font-body-sm text-body-sm text-on-surface-variant">Memastikan kesetaraan
-                                transkrip akademik bagi siswa yang melanjutkan ke universitas di Amerika Utara.</p>
+                            <h4 class="font-headline-sm text-headline-sm text-primary">WASC Accreditation Candidate</h4>
+                            <span class="font-label-sm text-label-sm text-primary font-semibold">Western Association of Schools and Colleges</span>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant">Ensuring international academic transcript equivalence for graduates seeking admission into North American and global colleges.</p>
                         </div>
                     </div>
                     <!-- Credential 5 -->
@@ -918,13 +846,9 @@
                             <span class="material-symbols-outlined text-[26px]">fact_check</span>
                         </div>
                         <div class="flex flex-col gap-1">
-                            <h4 class="font-headline-sm text-headline-sm text-primary">ISO 9001:2015 Educational
-                                Standard</h4>
-                            <span class="font-label-sm text-label-sm text-primary font-semibold">Sistem Manajemen
-                                Mutu Teruji</span>
-                            <p class="font-body-sm text-body-sm text-on-surface-variant">Standar operasional ketat
-                                untuk keamanan siswa (child safeguarding), higienitas, dan prosedur administrasi.
-                            </p>
+                            <h4 class="font-headline-sm text-headline-sm text-primary">ISO 9001:2015 Educational Standard</h4>
+                            <span class="font-label-sm text-label-sm text-primary font-semibold">Certified Management Systems</span>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant">Strict operational frameworks covering child safeguarding, facility hygiene, and institutional administration.</p>
                         </div>
                     </div>
                     <!-- Credential 6 -->
@@ -934,36 +858,33 @@
                             <span class="material-symbols-outlined text-[26px]">account_balance</span>
                         </div>
                         <div class="flex flex-col gap-1">
-                            <h4 class="font-headline-sm text-headline-sm text-primary">Opini Audit Wajar Tanpa
-                                Pengecualian</h4>
-                            <span class="font-label-sm text-label-sm text-primary font-semibold">Audit Keuangan KAP
-                                Independen 7 Tahun</span>
-                            <p class="font-body-sm text-body-sm text-on-surface-variant">Transparansi akuntabilitas
-                                pengelolaan dana yayasan yang menjamin keberlangsungan jangka panjang institusi.</p>
+                            <h4 class="font-headline-sm text-headline-sm text-primary">Clean Unqualified Audit Opinion</h4>
+                            <span class="font-label-sm text-label-sm text-primary font-semibold">7 Consecutive Years Big-4 Certified</span>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant">Transparent and accountable fiscal management guaranteeing the school's sustainable long-term development.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- CAMPUS INFRASTRUCTURE & FACILITIES SHOWCASE (3.8 HA ECO-SMART CAMPUS) -->
         <section class="w-full bg-surface-container-low py-4" id="campus-tour">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
                     <div class="flex flex-col gap-2 max-w-2xl">
                         <span
-                            class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Fasilitas
-                            Kampus Unggulan</span>
-                        <h2 class="font-headline-xl text-headline-xl text-primary">Infrastruktur Kampus 3.8 Ha
-                            Bernuansa Eco-Smart</h2>
+                            class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Featured
+                            Campus Facilities</span>
+                        <h2 class="font-headline-xl text-headline-xl text-primary">Eco-Smart 3.8-Hectare
+                            Campus Infrastructure</h2>
                         <p class="font-body-md text-body-md text-on-surface-variant">
-                            Dirancang secara ergonomis untuk memicu kreativitas, kebugaran fisik, dan kedamaian
-                            batin para siswa di tengah ruang terbuka hijau yang asri.
+                            Ergonomically designed to inspire curiosity, physical vitality, and focused reflection within a lush green learning environment.
                         </p>
                     </div>
                     <a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all"
                         href="#">
                         <span class="material-symbols-outlined text-[18px]">calendar_month</span>
-                        Jadwalkan Kunjungan Fisik (Private Tour)
+                        Schedule a Private Campus Tour
                     </a>
                 </div>
                 <!-- Facilities Bento Grid -->
@@ -972,7 +893,7 @@
                     <div class="rounded-3xl bg-surface-container-lowest overflow-hidden shadow-sm flex flex-col group">
                         <div class="relative h-56 w-full overflow-hidden">
                             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                data-alt="High school and middle school students working with advanced robotics kits, 3D printers, and coding monitors in a bright futuristic STEAM Maker Space lab at Unity School International, photorealistic modern education."
+                                data-alt="High school and middle school students working with advanced robotics kits and coding monitors in a bright STEAM Maker Space lab."
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmV6vTtQkhqMV6W3n8Nu4OLbC6odZe6DJwd8JCUPJVpSXG91SlMtplp5-ZJCcjukGsrSX6tmvQycf9UBVyE0Jl27yKPLPJ0uhK4nIDAKLeOTvLbZE2c-101D_3pBkvugm0TvAPmJTnF4-XIa3hDMZZTgA4-wB3yk9K3dlSoKkbRTIA7R-HGXwyD-MzKF2wLKEIV0tRfB29p2gILRZpagGGwSIXDUDoWNoqcJjrhFKcvjMl5RADyAQR" />
                             <span
                                 class="absolute top-4 left-4 px-3 py-1 rounded-full bg-primary/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-semibold">
@@ -980,11 +901,9 @@
                             </span>
                         </div>
                         <div class="p-6 flex flex-col gap-2">
-                            <h4 class="font-headline-sm text-headline-sm text-primary">AI &amp; Robotics
-                                Fabrication Studio</h4>
+                            <h4 class="font-headline-sm text-headline-sm text-primary">AI &amp; Robotics Fabrication Studio</h4>
                             <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                                Dilengkapi 3D printers, pemotong laser, modul mikrokontroler Arduino/Raspberry Pi,
-                                dan terminal komputasi berkinerja tinggi untuk riset siswa.
+                                Equipped with 3D printers, laser cutters, microcontrollers, and high-performance computing terminals for applied student innovation.
                             </p>
                         </div>
                     </div>
@@ -992,19 +911,17 @@
                     <div class="rounded-3xl bg-surface-container-lowest overflow-hidden shadow-sm flex flex-col group">
                         <div class="relative h-56 w-full overflow-hidden">
                             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                data-alt="Crystal clear semi-olympic outdoor heated swimming pool with clear lap lanes, shaded spectator stands, and lush tropical trees on an international school campus, sunlit architectural capture."
+                                data-alt="Semi-olympic outdoor heated swimming pool with clear lap lanes on an international school campus."
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo9OI8FOy2WCRzDkpKTmRdshg-RKG7NM_Ic6oLuk1X5gFIPu7BXoHH0xWCJfyRS-8ygVwOzgBRH_Lt2jvcUwt2KO2Et1ZJ7bErR99LMuGiTouLxVMiENE7O5_YrXlp9LpmwA5bSGsger3Dkidd0h0p74cOxpFau8PbTjXWB_76VHjwDbnG1qFhDDrqnNYXv1PCWOVSR4duY1Fpfm6yIvq9KTCuD7Sls6Kze9HIcD2-KTxEFFdgKCA3" />
                             <span
                                 class="absolute top-4 left-4 px-3 py-1 rounded-full bg-primary/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-semibold">
-                                Sport Complex
+                                Sports Complex
                             </span>
                         </div>
                         <div class="p-6 flex flex-col gap-2">
-                            <h4 class="font-headline-sm text-headline-sm text-primary">FINA-Standard Aquatic Centre
-                            </h4>
+                            <h4 class="font-headline-sm text-headline-sm text-primary">FINA-Standard Aquatic Centre</h4>
                             <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                                Kolam renang semi-olimpik dengan sistem sirkulasi garam tanpa kaporit berlebih,
-                                dilengkapi kolam pembiasaan aman untuk murid Early Years.
+                                Heated semi-Olympic pool equipped with advanced eco-filtration, accompanied by a dedicated shallow pool for Early Years learners.
                             </p>
                         </div>
                     </div>
@@ -1012,7 +929,7 @@
                     <div class="rounded-3xl bg-surface-container-lowest overflow-hidden shadow-sm flex flex-col group">
                         <div class="relative h-56 w-full overflow-hidden">
                             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                data-alt="Grand international school performing arts theatre auditorium with 800 velvet seats, warm acoustic wood paneling, orchestra pit, and state-of-the-art stage lighting."
+                                data-alt="Grand performing arts theatre auditorium with 800 seats and acoustic wood paneling."
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn2wqJJwnof3UWyNaV1ZxWVudCDF6aVUi4QPgxw9hgJNt3z7TYXWB41G6HfIh60R-FcZo_GMH3mhjpxz2DQbj8CmJImAz1L-yLn3JgzhM-Z9mjw04cDfLb6vNLAZzV_2bCpxORAKURao4orcfoVEO7icN551UScxkrCfrjLqzT031Y0IGpGUTfzBRGkI3PM3FdGQ6oEQRbE6oI1vPfszuLUrj9g8NGBboQG-v9m6fI6S2cq4_i8Fr6" />
                             <span
                                 class="absolute top-4 left-4 px-3 py-1 rounded-full bg-primary/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-semibold">
@@ -1020,11 +937,9 @@
                             </span>
                         </div>
                         <div class="p-6 flex flex-col gap-2">
-                            <h4 class="font-headline-sm text-headline-sm text-primary">800-Seat Grand Performing
-                                Theatre</h4>
+                            <h4 class="font-headline-sm text-headline-sm text-primary">800-Seat Grand Performing Theatre</h4>
                             <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                                Panggung pertunjukan bertaraf internasional dengan akustik profesional untuk
-                                pementasan musikal, konferensi Model UN, dan wisuda akbar.
+                                An auditorium with professional acoustics designed for orchestral concerts, theatrical performances, MUN assemblies, and ceremonies.
                             </p>
                         </div>
                     </div>
@@ -1032,7 +947,7 @@
                     <div class="rounded-3xl bg-surface-container-lowest overflow-hidden shadow-sm flex flex-col group">
                         <div class="relative h-56 w-full overflow-hidden">
                             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                data-alt="Sunlit contemporary two-story international school library with floor-to-ceiling glass windows, cozy reading pods, study carrels, and digital database terminals, minimalist Scandinavian design."
+                                data-alt="Sunlit contemporary international school library with cozy reading pods and study carrels."
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuABiEawTB1lXk3aNgyNdq_jKClTn3Ps6XSn3TvKZTnPFgEMbYQndPLfaC7c2Pd0RYLbd40ZRN519-TviYTefkHcL-a211M1IO-6PgpsPMXm9W_ljmsgT-TDQTKrhQLpuT5yFB4qs9KP6ymefzWFA6GidRpKDO2o0QdWijsqzsGlrdm6_iiUCHJ7hGBY4O3SS9OVz8x-vAHM3FVCRIkdU9-mPn8hofQSLOsiu7EBVLs3piWXO-LknzoU" />
                             <span
                                 class="absolute top-4 left-4 px-3 py-1 rounded-full bg-primary/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-semibold">
@@ -1040,11 +955,9 @@
                             </span>
                         </div>
                         <div class="p-6 flex flex-col gap-2">
-                            <h4 class="font-headline-sm text-headline-sm text-primary">Knowledge Commons &amp;
-                                Digital Library</h4>
+                            <h4 class="font-headline-sm text-headline-sm text-primary">Knowledge Commons &amp; Digital Library</h4>
                             <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                                Koleksi 25,000+ buku cetak, akses jurnal ilmiah internasional JSTOR dan EBSCO, serta
-                                ruang diskusi terisolasi suara (study pods).
+                                Housing over 25,000 physical volumes, subscriptions to international JSTOR and EBSCO databases, and quiet multimedia research pods.
                             </p>
                         </div>
                     </div>
@@ -1052,7 +965,7 @@
                     <div class="rounded-3xl bg-surface-container-lowest overflow-hidden shadow-sm flex flex-col group">
                         <div class="relative h-56 w-full overflow-hidden">
                             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                data-alt="Modern serene campus mosque with airy geometric arches, natural skylight illumination, calm indoor reflecting pool, and soft beige carpet for student prayer and reflection."
+                                data-alt="Modern serene campus sanctuary with airy arches and natural skylight illumination."
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIU_eTj0rf0QLcLRQ4ihm0q8AgnD5nDHXK5d8zxmKl5XUoJuO0lIX2PoVJocDZgGm2NRgP53zApQ6OO99m6yFBqU_eT91ruuBPT-93FprLM46hzu0NpIQkWiQZB_hulkE_FMiR_PFW1_3sEP8k08YFUrBAFp42WFtVijbphYruMgVFlfkRk7d27lRHBEnZ44RsvMsUJeT4FU62tK29y9t_iPiJROm1q8OA7hd6Cgh_v_LWhHwzjbwK" />
                             <span
                                 class="absolute top-4 left-4 px-3 py-1 rounded-full bg-primary/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-semibold">
@@ -1060,11 +973,9 @@
                             </span>
                         </div>
                         <div class="p-6 flex flex-col gap-2">
-                            <h4 class="font-headline-sm text-headline-sm text-primary">Central Grand Mosque &amp;
-                                Halaqah Sanctuary</h4>
+                            <h4 class="font-headline-sm text-headline-sm text-primary">Central Grand Sanctuary &amp; Reflection Hall</h4>
                             <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                                Pusat ibadah harian, shalat berjamaah, lingkaran halaqah tahfidz Qur'an, dan
-                                pembiasaan adab dengan kapasitas 1,200 jamaah.
+                                A 1,200-capacity community sanctuary supporting daily prayer, moral reflection, and cultural values development.
                             </p>
                         </div>
                     </div>
@@ -1072,7 +983,7 @@
                     <div class="rounded-3xl bg-surface-container-lowest overflow-hidden shadow-sm flex flex-col group">
                         <div class="relative h-56 w-full overflow-hidden">
                             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                data-alt="Welcoming and comforting school wellness clinic and counseling lounge with pastel warm tones, soft armchairs, indoor plants, and friendly medical consultation area."
+                                data-alt="School wellness clinic and counseling lounge with soft armchairs and medical consultation area."
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJFONOb3TH8-ri4iC90hm6fL4GP2ougoKA_otq9y5feRpaUL2iA0fNz7wtt26mHWG1DfsQvbWZqYjXMFoosDfqXVfB-fEGPaz_kT1SZmDL4PbipwwHiQFmA3EQKN9Za3lNSyiX0wGQzK6kycvYqQsYNOcnduG8cPcZkhyi-yNtaZnOHcmKQxUdpTJuKT1z138lr-5dbkxEiuZwIsl6FYTcfQPFR18u24rSv8X-NGXqf8ajJvYuoBE2" />
                             <span
                                 class="absolute top-4 left-4 px-3 py-1 rounded-full bg-primary/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-semibold">
@@ -1080,22 +991,20 @@
                             </span>
                         </div>
                         <div class="p-6 flex flex-col gap-2">
-                            <h4 class="font-headline-sm text-headline-sm text-primary">Wellness Clinic &amp;
-                                Psychological Support</h4>
+                            <h4 class="font-headline-sm text-headline-sm text-primary">Wellness Clinic &amp; Counseling Suites</h4>
                             <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                                Didampingi dokter umum dan psikolog anak purna-waktu untuk menjamin kesehatan fisik,
-                                mental, serta pendampingan konseling tumbuh kembang.
+                                Staffed by full-time medical practitioners and child psychologists ensuring physical wellness and holistic mental health care.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- CALL TO ACTION / ADMISSION PATHWAY BANNER -->
         <section class="w-full py-4 px-4 lg:px-8 bg-surface">
             <div class="max-w-7xl mx-auto">
                 <div class="relative rounded-3xl bg-primary overflow-hidden shadow-2xl p-8 lg:p-14 text-on-primary">
-                    <!-- Abstract light accents -->
                     <div
                         class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none">
                     </div>
@@ -1106,53 +1015,52 @@
                         <div
                             class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold mb-6">
                             <span class="inline-flex w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-                            <span>Penerimaan Peserta Didik Baru Gelombang 1 Dibuka</span>
+                            <span>Admissions Wave 1 Is Now Open</span>
                         </div>
                         <h2 class="font-display text-display text-on-primary tracking-tight leading-tight">
-                            Mari Bergabung Menjadi Bagian dari Keluarga Besar Insan Utama
+                            Join the Unity School International Family
                         </h2>
                         <p class="font-body-lg text-body-lg text-primary-fixed-dim mt-4 leading-relaxed">
-                            Investasikan pendidikan putra-putri Anda di lingkungan yang kondusif, mendalam dalam
-                            agama, dan unggul dalam sains. Kuota kelas dibatasi untuk menjaga rasio ideal pendidik
-                            dan peserta didik.
+                            Invest in your child’s future within a nurturing environment committed to moral integrity and global academic excellence. Cohort sizes are strictly capped to maintain optimal educator-to-student ratios.
                         </p>
                         <div class="flex flex-wrap items-center gap-4 mt-8">
                             <a class="inline-flex items-center gap-2 font-label-lg text-label-lg px-8 py-4 rounded-xl bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed-dim transition-all shadow-md font-bold"
                                 href="#">
                                 <span class="material-symbols-outlined text-[20px]">how_to_reg</span>
-                                <span>Daftar Akun PPDB Sekarang</span>
+                                <span>Register an Admissions Account</span>
                             </a>
                             <a class="inline-flex items-center gap-2 font-label-lg text-label-lg px-6 py-4 rounded-xl bg-primary-container text-on-primary hover:bg-primary-fixed-dim hover:text-primary transition-all shadow-sm"
                                 href="#">
                                 <span class="material-symbols-outlined text-[20px]">download</span>
-                                <span>Unduh Profil Lengkap (PDF)</span>
+                                <span>Download Prospectus (PDF)</span>
                             </a>
                             <a class="inline-flex items-center gap-2 font-label-lg text-label-lg px-6 py-4 rounded-xl bg-surface-container-lowest/10 backdrop-blur-md text-on-primary hover:bg-surface-container-lowest/20 transition-all"
                                 href="#">
                                 <span class="material-symbols-outlined text-[20px]">calendar_month</span>
-                                <span>Jadwalkan Kunjungan Kampus</span>
+                                <span>Book a Campus Tour</span>
                             </a>
                         </div>
                         <div
                             class="mt-8 pt-6 border-t border-primary-container flex flex-wrap items-center gap-6 text-primary-fixed-dim font-label-sm text-label-sm">
                             <div class="flex items-center gap-2">
                                 <span class="material-symbols-outlined text-[16px] text-secondary-container">call</span>
-                                <span>Layanan Konsultasi: (021) 8890-1234</span>
+                                <span>Admissions Desk: (021) 8890-1234</span>
                             </div>
                             <div class="flex items-center gap-2">
                                 <span class="material-symbols-outlined text-[16px] text-secondary-container">mail</span>
-                                <span>Email: info@insanutama.sch.id</span>
+                                <span>Email: admissions@unity.sch.id</span>
                             </div>
                             <div class="flex items-center gap-2">
                                 <span
                                     class="material-symbols-outlined text-[16px] text-secondary-container">location_on</span>
-                                <span>Kampus Utama: Jl. Pendidikan Utama No. 88</span>
+                                <span>Main Campus: Jl. Golden Archway No. 88, South Jakarta</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- FLOATING WHATSAPP MULTI-TIER HELPDESK TRIGGER -->
         <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end">
             <div class="hidden mb-3 p-4 rounded-2xl bg-surface-container-lowest shadow-2xl w-72 flex-col gap-3"
@@ -1163,10 +1071,8 @@
                             <span class="material-symbols-outlined text-[18px]">chat</span>
                         </div>
                         <div class="flex flex-col">
-                            <span class="font-label-md text-label-md text-primary font-bold">Layanan Helpdesk
-                                Yayasan</span>
-                            <span class="font-label-sm text-label-sm text-on-surface-variant">Pilih Petugas Admisi
-                                per Jenjang:</span>
+                            <span class="font-label-md text-label-md text-primary font-bold">Admissions Helpdesk</span>
+                            <span class="font-label-sm text-label-sm text-on-surface-variant">Select Division Counselor:</span>
                         </div>
                     </div>
                     <button class="text-on-surface-variant hover:text-primary"
@@ -1177,22 +1083,22 @@
                 <div class="flex flex-col gap-1.5">
                     <a class="p-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-between font-label-sm text-label-sm transition-colors"
                         href="#" target="_blank">
-                        <span>Admisi Toddler (TK)</span>
+                        <span>Early Years (Toddler/KG)</span>
                         <span class="material-symbols-outlined text-[16px] text-secondary">arrow_forward</span>
                     </a>
                     <a class="p-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-between font-label-sm text-label-sm transition-colors"
                         href="#" target="_blank">
-                        <span>Admisi Primary School (SD)</span>
+                        <span>Primary School (Grades 1-5)</span>
                         <span class="material-symbols-outlined text-[16px] text-tertiary">arrow_forward</span>
                     </a>
                     <a class="p-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-between font-label-sm text-label-sm transition-colors"
                         href="#" target="_blank">
-                        <span>Admisi Junior High (SMP)</span>
+                        <span>Middle School (Grades 6-8)</span>
                         <span class="material-symbols-outlined text-[16px] text-primary">arrow_forward</span>
                     </a>
                     <a class="p-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center justify-between font-label-sm text-label-sm transition-colors"
                         href="#" target="_blank">
-                        <span>Admisi Senior High (SMA/IB)</span>
+                        <span>Senior High (Grades 9-12 / IB)</span>
                         <span class="material-symbols-outlined text-[16px] text-primary-container">arrow_forward</span>
                     </a>
                 </div>
@@ -1202,7 +1108,7 @@
                 onclick="document.getElementById('wa-popover').classList.toggle('hidden')">
                 <span class="w-3 h-3 rounded-full bg-tertiary-fixed animate-ping"></span>
                 <span class="material-symbols-outlined text-[22px]">forum</span>
-                <span class="font-label-md text-label-md font-bold pr-1">Tanya Tim Admisi</span>
+                <span class="font-label-md text-label-md font-bold pr-1">Contact Admissions</span>
             </button>
         </div>
     </div>

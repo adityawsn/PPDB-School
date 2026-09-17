@@ -40,15 +40,15 @@
                         data-path="home" href="{{ route('home') }}">Home</a>
                     <a class="px-3 py-2 rounded-lg font-label-lg text-label-lg {{ request()->routeIs('profile') ? 'bg-primary-container text-on-primary' : 'text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface' }} transition-all whitespace-nowrap"
                         data-path="school-profile" href="{{ route('profile') }}">School Profile</a>
-                    <a class="px-3 py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all whitespace-nowrap"
-                        data-path="academic-programs" href="{{ route('home') }}#academic-programs">Academic Programs</a>
-                    <a class="px-3 py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all whitespace-nowrap"
-                        data-path="process-and-requirements" href="{{ route('home') }}#process-and-requirements">Process &amp;
+                    <a class="px-3 py-2 rounded-lg font-label-lg text-label-lg {{ request()->routeIs('AcademicPrograms') ? 'bg-primary-container text-on-primary' : 'text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface' }} transition-all whitespace-nowrap"
+                        data-path="academic-programs" href="{{ route('AcademicPrograms') }}">Academic Programs</a>
+                    <a class="px-3 py-2 rounded-lg font-label-lg text-label-lg {{ request()->routeIs('ProcessRecruitment') ? 'bg-primary-container text-on-primary' : 'text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface' }} transition-all whitespace-nowrap"
+                        data-path="process-and-requirements" href="{{ route('ProcessRecruitment') }}">Process &amp;
                         Requirements</a>
-                    <a class="px-3 py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all whitespace-nowrap"
-                        data-path="cost-of-education" href="{{ route('home') }}#cost-of-education">Cost of Education</a>
-                    <a class="px-3 py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all whitespace-nowrap"
-                        data-path="faq-and-contact" href="{{ route('contact') }}#faq-and-contact">FAQ &amp; Contact</a>
+                    <a class="px-3 py-2 rounded-lg font-label-lg text-label-lg  {{ request()->routeIs('cost-of-education') ? 'bg-primary-container text-on-primary' : 'text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface' }} transition-all whitespace-nowrap"
+                        data-path="cost-of-education" href="{{ route('cost-of-education') }}">Cost of Education</a>
+                    <a class="px-3 py-2 rounded-lg font-label-lg text-label-lg  {{ request()->routeIs('contact') ? 'bg-primary-container text-on-primary' : 'text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface' }} transition-all whitespace-nowrap"
+                        data-path="faq-and-contact" href="{{ route('contact') }}">FAQ &amp; Contact</a>
                 </nav>
 
                 <!-- Divider Garis Tipis (Opsional sebagai pemisah menu & tombol) -->

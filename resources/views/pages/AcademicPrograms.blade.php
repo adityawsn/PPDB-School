@@ -1,253 +1,9 @@
-<!DOCTYPE html>
+@extends('layouts.app')
+@section('title','Unity School | Academic Program')
 
-<html lang="id">
-
-<head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <style>
-        @layer base {
-
-            html,
-            body {
-                margin: 0;
-                padding: 0;
-            }
-
-            body {
-                overscroll-behavior: none;
-            }
-
-            main> :first-child {
-                margin-top: 0 !important;
-            }
-
-            main> :last-child {
-                margin-bottom: 0 !important;
-            }
-        }
-
-        ::-webkit-scrollbar {
-            display: none;
-        }
-    </style>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "primary": "#003441",
-                        "on-primary-fixed-variant": "#114d5d",
-                        "on-tertiary-fixed-variant": "#005137",
-                        "surface": "#faf8ff",
-                        "primary-container": "#0f4c5c",
-                        "error-container": "#ffdad6",
-                        "secondary-fixed-dim": "#ffb95f",
-                        "tertiary": "#003724",
-                        "on-primary-fixed": "#001f28",
-                        "surface-container-low": "#f2f3ff",
-                        "outline": "#70787c",
-                        "on-primary": "#ffffff",
-                        "surface-container-highest": "#dae2fd",
-                        "on-error-container": "#93000a",
-                        "surface-variant": "#dae2fd",
-                        "secondary-container": "#fea619",
-                        "inverse-surface": "#283044",
-                        "on-tertiary-container": "#53c896",
-                        "surface-container-high": "#e2e7ff",
-                        "secondary": "#855300",
-                        "tertiary-container": "#005036",
-                        "inverse-on-surface": "#eef0ff",
-                        "tertiary-fixed": "#85f8c4",
-                        "background": "#faf8ff",
-                        "on-secondary-container": "#684000",
-                        "on-surface-variant": "#40484b",
-                        "error": "#ba1a1a",
-                        "on-secondary": "#ffffff",
-                        "on-primary-container": "#87bbce",
-                        "on-tertiary": "#ffffff",
-                        "primary-fixed-dim": "#9acee1",
-                        "on-secondary-fixed": "#2a1700",
-                        "inverse-primary": "#9acee1",
-                        "secondary-fixed": "#ffddb8",
-                        "on-error": "#ffffff",
-                        "surface-dim": "#d2d9f4",
-                        "on-background": "#131b2e",
-                        "on-surface": "#131b2e",
-                        "surface-tint": "#306576",
-                        "primary-fixed": "#b6ebfe",
-                        "surface-container": "#eaedff",
-                        "surface-container-lowest": "#ffffff",
-                        "outline-variant": "#c0c8cb",
-                        "surface-bright": "#faf8ff",
-                        "on-tertiary-fixed": "#002114",
-                        "on-secondary-fixed-variant": "#653e00",
-                        "tertiary-fixed-dim": "#68dba9"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "space-xl": "2.5rem",
-                        "space-sm": "0.5rem",
-                        "space-xs": "0.25rem",
-                        "space-md": "1rem",
-                        "margin": "2rem",
-                        "space-2xl": "4rem",
-                        "margin-mobile": "1rem",
-                        "gutter-mobile": "1rem",
-                        "space-lg": "1.5rem",
-                        "gutter": "1.5rem"
-                    },
-                    "fontFamily": {
-                        "body-lg": ["Inter"],
-                        "display-mobile": ["Plus Jakarta Sans"],
-                        "label-sm": ["Plus Jakarta Sans"],
-                        "headline-lg": ["Plus Jakarta Sans"],
-                        "label-md": ["Plus Jakarta Sans"],
-                        "headline-xl": ["Plus Jakarta Sans"],
-                        "headline-sm": ["Plus Jakarta Sans"],
-                        "headline-xl-mobile": ["Plus Jakarta Sans"],
-                        "body-md": ["Inter"],
-                        "display": ["Plus Jakarta Sans"],
-                        "body-sm": ["Inter"],
-                        "headline-md": ["Plus Jakarta Sans"],
-                        "label-lg": ["Plus Jakarta Sans"]
-                    },
-                    "fontSize": {
-                        "body-lg": ["16px", {
-                            "lineHeight": "26px",
-                            "fontWeight": "400"
-                        }],
-                        "display-mobile": ["32px", {
-                            "lineHeight": "40px",
-                            "fontWeight": "800"
-                        }],
-                        "label-sm": ["11px", {
-                            "lineHeight": "14px",
-                            "fontWeight": "700"
-                        }],
-                        "headline-lg": ["28px", {
-                            "lineHeight": "36px",
-                            "fontWeight": "700"
-                        }],
-                        "label-md": ["12px", {
-                            "lineHeight": "16px",
-                            "fontWeight": "600"
-                        }],
-                        "headline-xl": ["36px", {
-                            "lineHeight": "44px",
-                            "fontWeight": "700"
-                        }],
-                        "headline-sm": ["18px", {
-                            "lineHeight": "26px",
-                            "fontWeight": "600"
-                        }],
-                        "headline-xl-mobile": ["26px", {
-                            "lineHeight": "34px",
-                            "fontWeight": "700"
-                        }],
-                        "body-md": ["14px", {
-                            "lineHeight": "22px",
-                            "fontWeight": "400"
-                        }],
-                        "display": ["48px", {
-                            "lineHeight": "56px",
-                            "fontWeight": "800"
-                        }],
-                        "body-sm": ["12px", {
-                            "lineHeight": "18px",
-                            "fontWeight": "400"
-                        }],
-                        "headline-md": ["22px", {
-                            "lineHeight": "30px",
-                            "fontWeight": "600"
-                        }],
-                        "label-lg": ["14px", {
-                            "lineHeight": "20px",
-                            "fontWeight": "600"
-                        }]
-                    }
-                }
-            }
-        };
-    </script>
-</head>
-
-<body class="bg-surface font-body-md text-on-surface antialiased">
-    <header class="fixed top-0 left-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
-        <div class="bg-primary text-on-primary py-1 px-4 lg:px-8">
-            <div
-                class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
-                <div class="flex items-center gap-2 overflow-x-auto whitespace-nowrap"><span
-                        class="material-symbols-outlined text-[16px] text-secondary-container">campaign</span><span
-                        class="font-label-sm text-label-sm text-surface-bright">Gelombang 1 Dibuka s/d 30 April 2025 •
-                        Kuota Terbatas untuk TK, SD, SMP &amp; SMA • Loket Verifikasi Offline Buka Senin-Sabtu
-                        08:00-15:00 WIB</span></div><a
-                    class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary-fixed hover:text-on-primary transition-colors whitespace-nowrap"
-                    href="#"><span
-                        class="material-symbols-outlined text-[14px]">support_agent</span><span>Shortcut WA Panitia
-                        PPDB</span></a>
-            </div>
-        </div>
-        <div class="h-20 bg-surface-container-lowest/90 backdrop-blur-xl">
-            <div class="h-full max-w-7xl mx-auto px-4 lg:px-8 flex items-center justify-between gap-4">
-                <div class="flex items-center gap-3"><img alt="Logo Yayasan Insan Utama PPDB"
-                        class="h-8 w-auto object-contain"
-                        src="https://lh3.googleusercontent.com/aida/AEtjO1WwtZ3a-in9tyopTM36fGN0czw-xImWLJugYROtr3Rb3trbiomjQ1qjNNUH82WGXlJVx1zPVuEPhXZ2enT9PmUVlQPwoNnt_U3mM0IEjpfXs9fWI3THUGmnCt0vrhUYaTgxSvMBJLNriTKnlEM2LLo_tB6P0N7pBsvXO8x6I--e00RqSR4p-Y5o9TWECKTP328fevWR4KIptFXQMRP2yAonT95H86QrHCYNIkt6hHbn7QDL_zev1PxVPQ" />
-                    <div class="flex flex-col"><span
-                            class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight">Insan
-                            Utama</span><span
-                            class="font-label-sm text-label-sm text-on-surface-variant font-medium">Portal Resmi PPDB
-                            Terpadu T.A. 2025/2026</span></div>
-                </div>
-                <nav class="hidden xl:flex items-center gap-1 lg:gap-2"
-                    data-active-classes="text-primary font-bold bg-surface-container-high rounded-lg px-3 py-1.5"><a
-                        aria-current="page"
-                        class="transition-colors text-primary font-bold bg-surface-container-high rounded-lg px-3 py-1.5"
-                        data-path="beranda" href="#">Beranda</a><a
-                        class="font-label-lg text-label-lg px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
-                        data-path="profil-yayasan" href="#">Profil Yayasan</a><a
-                        class="font-label-lg text-label-lg px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
-                        data-path="unit-pendidikan" href="#">Unit Pendidikan</a><a
-                        class="font-label-lg text-label-lg px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
-                        data-path="alur-dan-syarat" href="#">Alur &amp; Syarat</a><a
-                        class="font-label-lg text-label-lg px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
-                        data-path="biaya-pendidikan" href="#">Biaya Pendidikan</a><a
-                        class="font-label-lg text-label-lg px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
-                        data-path="faq-dan-kontak" href="#">FAQ &amp; Kontak</a></nav>
-                <div class="flex items-center gap-3"><a
-                        class="hidden sm:inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors"
-                        data-path="masuk-akun" href="#">Masuk Akun</a><a
-                        class="inline-flex items-center gap-2 font-label-md text-label-md px-4 py-2.5 rounded-lg bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed-dim transition-colors shadow-sm font-semibold"
-                        data-path="daftar-ppdb" href="#"><span
-                            class="material-symbols-outlined text-[18px]">how_to_reg</span><span>Daftar
-                            Sekarang</span></a>
-                    <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span
-                            class="material-symbols-outlined text-on-primary text-[18px]">person</span></div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="w-full pt-20 bg-surface min-h-screen">
-        <div class="flex flex-col w-full">
+@section('content')
             <!-- Top Navigation Sub-bar / Breadcrumb & Unit Switcher -->
-            <section class="w-full bg-surface-container-low shadow-[0_1px_4px_rgba(0,0,0,0.03)]">
+            {{-- <section class="w-full bg-surface-container-low shadow-[0_1px_4px_rgba(0,0,0,0.03)]">
                 <div class="max-w-7xl mx-auto px-4 lg:px-8 py-4">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
                         <!-- Breadcrumb -->
@@ -294,12 +50,12 @@
                         </a>
                     </div>
                 </div>
-            </section>
+            </section> --}}
             <!-- Hero & Executive Overview -->
-            <section class="w-full py-space-xl lg:py-space-2xl bg-surface">
+            <section class="w-full py-space-xl lg:py-space-lg bg-surface">
                 <div class="max-w-7xl mx-auto px-4 lg:px-8">
                     <!-- School Identity Banner -->
-                    <div
+                    {{-- <div
                         class="flex flex-wrap items-center justify-between gap-4 mb-8 bg-surface-container-lowest p-6 rounded-2xl shadow-sm">
                         <div class="flex items-center gap-4">
                             <img alt="Unity School International Admissions" class="h-10 w-auto object-contain"
@@ -330,7 +86,7 @@
                                 College Board Center #672109
                             </span>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                         <!-- Main Lead (Col 7) -->
                         <div class="lg:col-span-7 flex flex-col gap-6">
@@ -444,7 +200,7 @@
                 </div>
             </section>
             <!-- 3 Academic Pillars -->
-            <section class="w-full py-space-xl bg-surface-container-low">
+            <section class="w-full py-space-lg bg-surface-container-low">
                 <div class="max-w-7xl mx-auto px-4 lg:px-8">
                     <div class="text-center max-w-3xl mx-auto mb-12">
                         <span
@@ -546,7 +302,7 @@
                 </div>
             </section>
             <!-- Dual Academic Pathway Curriculum & Electives -->
-            <section class="w-full py-space-xl lg:py-space-2xl bg-surface">
+            <section class="w-full py-space-lg lg:py-space-lg bg-surface">
                 <div class="max-w-7xl mx-auto px-4 lg:px-8">
                     <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
                         <div>
@@ -705,7 +461,7 @@
                     </div>
                     <!-- High School Daily Routine & Schedule Timeline -->
                     <div class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm">
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
                             <div>
                                 <h3 class="font-headline-md text-headline-md text-primary">Rutinitas Harian &amp; Ritme
                                     Belajar Siswa Senior High</h3>
@@ -755,7 +511,7 @@
                 </div>
             </section>
             <!-- Admissions Requirements & Quota Allocation -->
-            <section class="w-full py-space-xl bg-surface-container-low" id="pendaftaran">
+            <section class="w-full py-space-sm bg-surface-container-low" id="pendaftaran">
                 <div class="max-w-7xl mx-auto px-4 lg:px-8">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                         <!-- Quota Progress & Eligibility (Col 7) -->
@@ -941,7 +697,7 @@
                 </div>
             </section>
             <!-- Specialized Campus Facilities -->
-            <section class="w-full py-space-xl lg:py-space-2xl bg-surface">
+            <section class="w-full py-space-sm lg:py-space-lg bg-surface">
                 <div class="max-w-7xl mx-auto px-4 lg:px-8">
                     <div class="text-center max-w-2xl mx-auto mb-12">
                         <span class="font-label-md text-label-md text-secondary font-bold uppercase">Lingkungan
@@ -1084,7 +840,7 @@
                 </div>
             </section>
             <!-- Tuition & Investment Transparency Box -->
-            <section class="w-full py-space-xl bg-surface-container-low" id="biaya">
+            <section class="w-full py-space-sm bg-surface-container-low" id="biaya">
                 <div class="max-w-7xl mx-auto px-4 lg:px-8">
                     <div class="p-8 lg:p-12 rounded-3xl bg-surface-container-lowest shadow-md">
                         <div
@@ -1211,7 +967,7 @@
                 </div>
             </section>
             <!-- Admissions Counselor & Location -->
-            <section class="w-full py-space-xl bg-surface">
+            <section class="w-full py-space-lg bg-surface">
                 <div class="max-w-7xl mx-auto px-4 lg:px-8">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                         <!-- Counselor Contact Card (Col 6) -->
@@ -1322,9 +1078,7 @@
                     </div>
                 </div>
             </section>
-        </div>
-    </main>
-    <aside class="fixed bottom-6 right-6 z-50 flex items-end flex-col gap-2 group">
+                <aside class="fixed bottom-6 right-6 z-50 flex items-end flex-col gap-2 group">
         <div
             class="hidden group-hover:flex flex-col bg-surface-container-lowest p-3 rounded-xl shadow-[0_20px_30px_-10px_rgba(15,23,42,0.15)] max-w-xs transition-all">
             <span class="font-label-md text-label-md text-primary font-bold mb-1">Helpdesk PPDB Yayasan</span>
@@ -1344,103 +1098,4 @@
             type="button"><span class="material-symbols-outlined text-[22px]">chat</span><span
                 class="font-label-md text-label-md hidden md:inline">Bantuan PPDB WhatsApp</span></button>
     </aside>
-    <footer class="w-full bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
-        <div class="max-w-7xl mx-auto px-4 lg:px-8 py-12">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
-                <div class="flex flex-col gap-4">
-                    <div class="flex items-center gap-3"><img alt="Logo Yayasan Insan Utama PPDB"
-                            class="h-8 w-auto object-contain"
-                            src="https://lh3.googleusercontent.com/aida/AEtjO1WwtZ3a-in9tyopTM36fGN0czw-xImWLJugYROtr3Rb3trbiomjQ1qjNNUH82WGXlJVx1zPVuEPhXZ2enT9PmUVlQPwoNnt_U3mM0IEjpfXs9fWI3THUGmnCt0vrhUYaTgxSvMBJLNriTKnlEM2LLo_tB6P0N7pBsvXO8x6I--e00RqSR4p-Y5o9TWECKTP328fevWR4KIptFXQMRP2yAonT95H86QrHCYNIkt6hHbn7QDL_zev1PxVPQ" /><span
-                            class="font-headline-sm text-headline-sm text-primary font-bold">Insan Utama</span></div>
-                    <p class="font-body-sm text-body-sm text-on-surface-variant">Kampus Pendidikan Terpadu Yayasan
-                        Insan Utama. Menumbuhkan generasi berkarakter qur'ani, mandiri, dan berprestasi global.</p>
-                    <div class="flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm">
-                        <div class="flex items-start gap-2"><span
-                                class="material-symbols-outlined text-[18px] text-primary mt-0.5">pin_drop</span><span>Jl.
-                                Pendidikan Utama No. 88, Kompleks Insan Edu Center, Indonesia</span></div>
-                        <div class="flex items-start gap-2"><span
-                                class="material-symbols-outlined text-[18px] text-primary mt-0.5">schedule</span><span>Loket
-                                TU &amp; Verifikasi: Senin - Sabtu (08.00 - 15.00 WIB)</span></div>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-3"><span
-                        class="font-headline-sm text-headline-sm text-primary font-bold">Jenjang Pendidikan</span>
-                    <ul class="flex flex-col gap-2 font-body-md text-body-md text-on-surface-variant">
-                        <li><a class="hover:text-primary transition-colors flex items-center gap-2"
-                                href="#"><span
-                                    class="material-symbols-outlined text-[14px] text-secondary">arrow_forward</span>TK
-                                Islam Terpadu Insan Utama</a></li>
-                        <li><a class="hover:text-primary transition-colors flex items-center gap-2"
-                                href="#"><span
-                                    class="material-symbols-outlined text-[14px] text-secondary">arrow_forward</span>SD
-                                Islam Terpadu Insan Utama</a></li>
-                        <li><a class="hover:text-primary transition-colors flex items-center gap-2"
-                                href="#"><span
-                                    class="material-symbols-outlined text-[14px] text-secondary">arrow_forward</span>SMP
-                                Islam Terpadu Insan Utama</a></li>
-                        <li><a class="hover:text-primary transition-colors flex items-center gap-2"
-                                href="#"><span
-                                    class="material-symbols-outlined text-[14px] text-secondary">arrow_forward</span>SMA
-                                Insan Utama (Boarding &amp; Full Day)</a></li>
-                    </ul>
-                </div>
-                <div class="flex flex-col gap-3"><span
-                        class="font-headline-sm text-headline-sm text-primary font-bold">Layanan Informasi PPDB</span>
-                    <ul class="flex flex-col gap-2 font-body-md text-body-md text-on-surface-variant">
-                        <li><a class="hover:text-primary transition-colors flex items-center gap-2"
-                                href="#"><span
-                                    class="material-symbols-outlined text-[16px] text-on-surface-variant">download</span>Unduh
-                                Brosur PDF 2025/2026</a></li>
-                        <li><a class="hover:text-primary transition-colors flex items-center gap-2"
-                                href="#"><span
-                                    class="material-symbols-outlined text-[16px] text-on-surface-variant">rule</span>Alur
-                                Seleksi &amp; Berkas Syarat</a></li>
-                        <li><a class="hover:text-primary transition-colors flex items-center gap-2"
-                                href="#"><span
-                                    class="material-symbols-outlined text-[16px] text-on-surface-variant">payments</span>Biaya
-                                &amp; Diskon Sibling</a></li>
-                        <li><a class="hover:text-primary transition-colors flex items-center gap-2"
-                                href="#"><span
-                                    class="material-symbols-outlined text-[16px] text-on-surface-variant">school</span>Kebijakan
-                                Beasiswa Prestasi &amp; Tahfidz</a></li>
-                        <li><a class="hover:text-primary transition-colors flex items-center gap-2"
-                                href="#"><span
-                                    class="material-symbols-outlined text-[16px] text-on-surface-variant">domain_verification</span>Loket
-                                Verifikasi Dokumen Fisik</a></li>
-                    </ul>
-                </div>
-                <div class="flex flex-col gap-3"><span
-                        class="font-headline-sm text-headline-sm text-primary font-bold">Helpdesk Panitia PPDB</span>
-                    <div class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant"><a
-                            class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors flex items-center justify-between"
-                            href="#"><span class="font-medium">Panitia Unit TK &amp; SD</span><span
-                                class="font-label-sm text-label-sm text-tertiary font-semibold">+62
-                                812-3456-7801</span></a><a
-                            class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors flex items-center justify-between"
-                            href="#"><span class="font-medium">Panitia Unit SMP</span><span
-                                class="font-label-sm text-label-sm text-tertiary font-semibold">+62
-                                812-3456-7802</span></a><a
-                            class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors flex items-center justify-between"
-                            href="#"><span class="font-medium">Panitia Unit SMA</span><span
-                                class="font-label-sm text-label-sm text-tertiary font-semibold">+62
-                                812-3456-7803</span></a><a
-                            class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors flex items-center justify-between"
-                            href="#"><span class="font-medium">Sekretariat Pusat Yayasan</span><span
-                                class="font-label-sm text-label-sm text-primary font-semibold">+62
-                                811-9876-5432</span></a></div>
-                </div>
-            </div>
-            <div
-                class="border-t border-surface-container-high pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-                <p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Yayasan Insan Utama. Hak Cipta
-                    Dilindungi. Sistem Informasi PPDB Terpadu Berbasis Digital &amp; Offline Verification.</p>
-                <div class="flex items-center gap-4 text-on-surface-variant font-label-sm text-label-sm"><a
-                        class="hover:text-primary transition-colors" href="#">Syarat &amp;
-                        Ketentuan</a><span>•</span><a class="hover:text-primary transition-colors"
-                        href="#">Kebijakan Privasi Data Siswa</a></div>
-            </div>
-        </div>
-    </footer>
-</body>
-
-</html>
+@endsection
