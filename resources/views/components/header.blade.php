@@ -48,7 +48,7 @@
                     <a class="px-3 py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all whitespace-nowrap"
                         data-path="cost-of-education" href="{{ route('home') }}#cost-of-education">Cost of Education</a>
                     <a class="px-3 py-2 rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all whitespace-nowrap"
-                        data-path="faq-and-contact" href="{{ route('home') }}#faq-and-contact">FAQ &amp; Contact</a>
+                        data-path="faq-and-contact" href="{{ route('contact') }}#faq-and-contact">FAQ &amp; Contact</a>
                 </nav>
 
                 <!-- Divider Garis Tipis (Opsional sebagai pemisah menu & tombol) -->

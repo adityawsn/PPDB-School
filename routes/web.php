@@ -10,3 +10,7 @@ Route::get('/school-profile', function () {
     return view('pages.profile');
 })->name('profile');
 
+Route::get('/contact', function () {
+return view('pages.contact');
+})->name('contact');
+

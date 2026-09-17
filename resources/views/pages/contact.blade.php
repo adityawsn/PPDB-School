@@ -1,256 +1,10 @@
-<!DOCTYPE html>
+@extends('layouts.app')
 
-<html lang="id">
-
-<head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <style>
-        @layer base {
-
-            html,
-            body {
-                margin: 0;
-                padding: 0;
-            }
-
-            body {
-                overscroll-behavior: none;
-            }
-
-            main> :first-child {
-                margin-top: 0 !important;
-            }
-
-            main> :last-child {
-                margin-bottom: 0 !important;
-            }
-        }
-
-        ::-webkit-scrollbar {
-            display: none;
-        }
-    </style>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-secondary-fixed-variant": "#653e00",
-                        "surface-bright": "#faf8ff",
-                        "surface": "#faf8ff",
-                        "surface-container": "#eaedff",
-                        "outline": "#70787c",
-                        "secondary-fixed-dim": "#ffb95f",
-                        "inverse-on-surface": "#eef0ff",
-                        "primary-fixed": "#b6ebfe",
-                        "on-surface-variant": "#40484b",
-                        "on-secondary-container": "#684000",
-                        "surface-container-highest": "#dae2fd",
-                        "tertiary": "#003724",
-                        "on-primary-fixed-variant": "#114d5d",
-                        "tertiary-container": "#005036",
-                        "on-tertiary": "#ffffff",
-                        "on-tertiary-fixed": "#002114",
-                        "tertiary-fixed": "#85f8c4",
-                        "primary-container": "#0f4c5c",
-                        "secondary-fixed": "#ffddb8",
-                        "on-secondary-fixed": "#2a1700",
-                        "primary-fixed-dim": "#9acee1",
-                        "surface-dim": "#d2d9f4",
-                        "on-secondary": "#ffffff",
-                        "inverse-primary": "#9acee1",
-                        "surface-container-high": "#e2e7ff",
-                        "on-primary-fixed": "#001f28",
-                        "secondary-container": "#fea619",
-                        "surface-tint": "#306576",
-                        "error-container": "#ffdad6",
-                        "error": "#ba1a1a",
-                        "surface-container-low": "#f2f3ff",
-                        "primary": "#003441",
-                        "inverse-surface": "#283044",
-                        "on-surface": "#131b2e",
-                        "surface-variant": "#dae2fd",
-                        "tertiary-fixed-dim": "#68dba9",
-                        "secondary": "#855300",
-                        "on-primary": "#ffffff",
-                        "outline-variant": "#c0c8cb",
-                        "on-background": "#131b2e",
-                        "on-error": "#ffffff",
-                        "on-primary-container": "#87bbce",
-                        "on-tertiary-container": "#53c896",
-                        "on-error-container": "#93000a",
-                        "background": "#faf8ff",
-                        "surface-container-lowest": "#ffffff",
-                        "on-tertiary-fixed-variant": "#005137"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "space-xs": "0.25rem",
-                        "space-lg": "1.5rem",
-                        "margin": "2rem",
-                        "gutter-mobile": "1rem",
-                        "space-xl": "2.5rem",
-                        "margin-mobile": "1rem",
-                        "gutter": "1.5rem",
-                        "space-md": "1rem",
-                        "space-2xl": "4rem",
-                        "space-sm": "0.5rem"
-                    },
-                    "fontFamily": {
-                        "label-sm": ["Plus Jakarta Sans"],
-                        "body-sm": ["Inter"],
-                        "headline-xl": ["Plus Jakarta Sans"],
-                        "headline-sm": ["Plus Jakarta Sans"],
-                        "headline-lg": ["Plus Jakarta Sans"],
-                        "body-md": ["Inter"],
-                        "label-lg": ["Plus Jakarta Sans"],
-                        "display": ["Plus Jakarta Sans"],
-                        "headline-md": ["Plus Jakarta Sans"],
-                        "display-mobile": ["Plus Jakarta Sans"],
-                        "headline-xl-mobile": ["Plus Jakarta Sans"],
-                        "body-lg": ["Inter"],
-                        "label-md": ["Plus Jakarta Sans"]
-                    },
-                    "fontSize": {
-                        "label-sm": ["11px", {
-                            "lineHeight": "14px",
-                            "fontWeight": "700"
-                        }],
-                        "body-sm": ["12px", {
-                            "lineHeight": "18px",
-                            "fontWeight": "400"
-                        }],
-                        "headline-xl": ["36px", {
-                            "lineHeight": "44px",
-                            "fontWeight": "700"
-                        }],
-                        "headline-sm": ["18px", {
-                            "lineHeight": "26px",
-                            "fontWeight": "600"
-                        }],
-                        "headline-lg": ["28px", {
-                            "lineHeight": "36px",
-                            "fontWeight": "700"
-                        }],
-                        "body-md": ["14px", {
-                            "lineHeight": "22px",
-                            "fontWeight": "400"
-                        }],
-                        "label-lg": ["14px", {
-                            "lineHeight": "20px",
-                            "fontWeight": "600"
-                        }],
-                        "display": ["48px", {
-                            "lineHeight": "56px",
-                            "fontWeight": "800"
-                        }],
-                        "headline-md": ["22px", {
-                            "lineHeight": "30px",
-                            "fontWeight": "600"
-                        }],
-                        "display-mobile": ["32px", {
-                            "lineHeight": "40px",
-                            "fontWeight": "800"
-                        }],
-                        "headline-xl-mobile": ["26px", {
-                            "lineHeight": "34px",
-                            "fontWeight": "700"
-                        }],
-                        "body-lg": ["16px", {
-                            "lineHeight": "26px",
-                            "fontWeight": "400"
-                        }],
-                        "label-md": ["12px", {
-                            "lineHeight": "16px",
-                            "fontWeight": "600"
-                        }]
-                    }
-                }
-            }
-        };
-    </script>
-</head>
-
-<body class="bg-surface font-body-md text-on-surface antialiased">
-    <header class="fixed top-0 left-0 w-full z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
-        <div class="bg-primary text-on-primary py-1.5 px-4 lg:px-8">
-            <div
-                class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
-                <div class="flex items-center gap-2 overflow-x-auto whitespace-nowrap"><span
-                        class="inline-flex w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span
-                        class="font-label-sm text-label-sm text-surface-bright uppercase tracking-wider">ADMISSIONS OPEN
-                        AY 2025/2026</span><span class="text-primary-fixed-dim text-body-sm font-light">•</span><span
-                        class="font-body-sm text-body-sm text-surface-container-high">Early Bird &amp; Merit Scholarship
-                        Assessment Open</span><span class="text-primary-fixed-dim text-body-sm font-light">•</span><span
-                        class="font-body-sm text-body-sm text-secondary-fixed">Hotline: +62 21 555-0199</span></div>
-                <div
-                    class="inline-flex items-center gap-2 font-label-sm text-label-sm text-surface-bright/90 whitespace-nowrap">
-                    <span class="material-symbols-outlined text-[15px] text-secondary-fixed">schedule</span><span>Mon -
-                        Sat: 08.00 - 16.00</span><span class="text-primary-fixed-dim font-light">|</span><a
-                        class="text-secondary-fixed hover:text-on-primary transition-colors flex items-center gap-1"
-                        href="#"><span
-                            class="material-symbols-outlined text-[14px]">support_agent</span><span>Parent Support
-                            Hub</span></a></div>
-            </div>
-        </div>
-        <div class="h-20 bg-surface-container-lowest/95 backdrop-blur-xl">
-            <div class="h-full max-w-7xl mx-auto px-4 lg:px-8 flex items-center justify-between gap-4">
-                <div class="flex items-center gap-3"><img alt="Unity School International Logo"
-                        class="h-10 w-auto object-contain"
-                        src="https://lh3.googleusercontent.com/aida/AEtjO1XxcdRx0T1hBLm-7-sUoS8JzA9oUSbxQCxtz9iYmGNxrZlJEKSb8dcWPLV3qSI5tfJ4J5z8OZ7lFFv5-jG7uLSoNSSsYVaLedzvkwtZ___j7N8dvYleblGG4mplaMiaw96W9HolH7rzOLDNkRHGruP-f28lYLyjemvrvVALmrC4vlrNfiSicSBDYNIiExBRas7gBeQhpxgsiq3aHhY16L9ins4CYVR9TdjCJ2hji5tpkTmpfzhgFfqqSUs" />
-                    <div class="hidden sm:flex flex-col border-l border-surface-container-highest pl-3"><span
-                            class="font-label-sm text-[10px] uppercase tracking-wider text-secondary font-bold">SPK
-                            Terakreditasi A • Cambridge ID1082</span><span
-                            class="font-body-sm text-[11px] text-on-surface-variant font-medium">IB World School
-                            Candidate</span></div>
-                </div>
-                <nav class="hidden xl:flex items-center gap-1 lg:gap-1.5"
-                    data-active-classes="text-primary font-bold bg-surface-container-high rounded-lg px-3 py-1.5"><a
-                        class="font-label-lg text-label-lg px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
-                        data-path="beranda" href="#">Home</a><a
-                        class="font-label-lg text-label-lg px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
-                        data-path="profil-yayasan" href="#">School Profile</a><a
-                        class="font-label-lg text-label-lg px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
-                        data-path="unit-pendidikan" href="#">Academic Programs</a><a
-                        class="font-label-lg text-label-lg px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
-                        data-path="alur-dan-syarat" href="#">Admissions &amp; Requirements</a><a
-                        class="font-label-lg text-label-lg px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
-                        data-path="biaya-pendidikan" href="#">Tuition &amp; Scholarships</a><a
-                        class="font-label-lg text-label-lg px-3 py-1.5 rounded-lg text-primary font-bold bg-surface-container-high transition-colors"
-                        data-path="faq-dan-kontak" href="#">FAQ &amp; Contact</a></nav>
-                <div class="flex items-center gap-3"><a
-                        class="hidden sm:inline-flex items-center justify-center font-label-md text-label-md px-4 py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors"
-                        data-path="masuk-akun" href="#">Parent Portal Login</a><a
-                        class="inline-flex items-center gap-2 font-label-md text-label-md px-4 py-2.5 rounded-lg bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed-dim transition-colors shadow-sm font-semibold"
-                        data-path="daftar-ppdb" href="#"><span
-                            class="material-symbols-outlined text-[18px]">how_to_reg</span><span>Apply Now</span></a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="w-full pt-20 bg-surface min-h-screen">
-        <div class="flex flex-col w-full">
-            <!-- SECTION 1: HERO & SEARCH BANNER -->
+@section('title', 'Unity School | Contact')
+@section('content')
+                <!-- SECTION 1: HERO & SEARCH BANNER -->
             <section
-                class="relative w-full bg-gradient-to-b from-surface-container-low via-surface to-surface px-4 lg:px-8 py-12 lg:py-16 overflow-hidden">
+                class="relative w-full bg-gradient-to-b from-surface-container-low via-surface to-surface px-4 lg:px-8 py-12 lg:py-8 overflow-hidden">
                 <!-- Ambient subtle background decorative radial glows -->
                 <div
                     class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary-fixed/25 blur-3xl pointer-events-none">
@@ -351,7 +105,7 @@
                 </div>
             </section>
             <!-- SECTION 2: DIREKTORI KONTAK HELPDESK RESMI PANITIA PER UNIT -->
-            <section class="w-full px-4 lg:px-8 py-12 bg-surface">
+            <section class="w-full px-4 lg:px-8 py-6 bg-surface">
                 <div class="max-w-7xl mx-auto">
                     <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
                         <div>
@@ -661,9 +415,9 @@
                 </div>
             </section>
             <!-- SECTION 3: FAQ ACCORDION KOMPREHENSIF -->
-            <section class="w-full px-4 lg:px-8 py-12 bg-surface-container-low">
+            <section class="w-full px-4 lg:px-8 py-6 bg-surface-container-low">
                 <div class="max-w-5xl mx-auto">
-                    <div class="text-center mb-10">
+                    <div class="text-center mb-6">
                         <span
                             class="px-3.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold uppercase tracking-wider">
                             Pusat Informasi &amp; Jawaban Resmi
@@ -926,9 +680,9 @@
                 </div>
             </section>
             <!-- SECTION 4: ALUR CEPAT PENYELESAIAN KENDALA PENDAFTARAN -->
-            <section class="w-full px-4 lg:px-8 py-16 bg-surface">
+            <section class="w-full px-4 lg:px-8 py-6 bg-surface">
                 <div class="max-w-7xl mx-auto">
-                    <div class="text-center mb-12">
+                    <div class="text-center mb-8">
                         <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">
                             Panduan Langkah Demi Langkah
                         </span>
@@ -1047,9 +801,9 @@
                 </div>
             </section>
             <!-- SECTION 5: PETA LOKASI KAMPUS & PANDUAN KUNJUNGAN LOKET FISIK -->
-            <section class="w-full px-4 lg:px-8 py-16 bg-surface-container-low" id="welcome-pavilion">
+            <section class="w-full px-4 lg:px-8 py-8 bg-surface-container-low" id="welcome-pavilion">
                 <div class="max-w-7xl mx-auto">
-                    <div class="text-center mb-12">
+                    <div class="text-center mb-8">
                         <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">
                             Campus Visit &amp; Experience Tour
                         </span>
@@ -1215,7 +969,7 @@
                 </div>
             </section>
             <!-- SECTION 6: FORMULIR TIKET PENGADUAN & PESAN LANGSUNG -->
-            <section class="w-full px-4 lg:px-8 py-16 bg-surface" id="inquiry-form-section">
+            <section class="w-full px-4 lg:px-8 py-8 bg-surface" id="inquiry-form-section">
                 <div class="max-w-4xl mx-auto">
                     <div
                         class="bg-surface-container-lowest p-6 sm:p-10 rounded-3xl shadow-sm border border-surface-container-high">
@@ -1372,71 +1126,29 @@
                     </div>
                 </div>
             </section>
-            <!-- SECTION 7: CALL TO ACTION PENUTUP -->
-            <section class="w-full px-4 lg:px-8 py-16 bg-surface-container-lowest">
-                <div class="max-w-7xl mx-auto">
-                    <div
-                        class="relative w-full rounded-3xl bg-gradient-to-br from-primary via-primary-container to-tertiary text-on-primary p-8 lg:p-14 overflow-hidden shadow-xl flex flex-col items-center text-center">
-                        <!-- Floating Subtle Shapes -->
-                        <div
-                            class="absolute -top-20 -left-20 w-72 h-72 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none">
-                        </div>
-                        <div
-                            class="absolute -bottom-20 -right-20 w-80 h-80 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none">
-                        </div>
-                        <div class="relative z-10 max-w-3xl flex flex-col items-center">
-                            <span
-                                class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-lowest/15 backdrop-blur-md font-label-sm text-label-sm uppercase tracking-wider text-secondary-container font-bold mb-4">
-                                <span class="material-symbols-outlined text-[16px]">stars</span>
-                                <span>LIMITED COHORT CAPACITY • AY 2025/2026</span>
-                            </span>
-                            <h2
-                                class="font-headline-xl text-headline-xl lg:text-[40px] lg:leading-[48px] font-bold text-on-primary mb-4 tracking-tight">
-                                Amankan Kursi Putra-Putri Anda di Unity School International - Periode Early Bird Intake
-                                2025/2026 Segera Berakhir
-                            </h2>
-                            <p class="font-body-lg text-body-lg text-surface-container-high/90 mb-8 max-w-2xl">
-                                Rasio kelas kami pertahankan maksimal 20-22 siswa per kelas dengan 2 pendidik guna
-                                menjamin perhatian akademik, pembentukan karakter mulia, dan kompetensi global yang
-                                optimal.
-                            </p>
-                            <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-                                <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-secondary-container text-on-secondary-container font-label-lg text-label-lg font-bold hover:bg-secondary-fixed-dim transition-all shadow-lg hover:shadow-xl"
-                                    data-path="daftar-ppdb" href="#">
-                                    <span class="material-symbols-outlined text-[20px]">how_to_reg</span>
-                                    <span>Mulai Pendaftaran Online (Apply Now)</span>
-                                </a>
-                                <a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 backdrop-blur-md text-on-primary font-label-lg text-label-lg font-semibold transition-colors"
-                                    href="#">
-                                    <span class="material-symbols-outlined text-[20px]">download</span>
-                                    <span>Unduh School Prospectus (PDF)</span>
-                                </a>
-                            </div>
-                            <!-- Trust Badges -->
-                            <div
-                                class="mt-8 flex flex-wrap items-center justify-center gap-6 text-surface-container-highest/80 font-label-sm text-label-sm">
-                                <span class="flex items-center gap-1.5">
-                                    <span
-                                        class="material-symbols-outlined text-[16px] text-tertiary-fixed">verified</span>
-                                    Cambridge International ID1082
-                                </span>
-                                <span class="hidden sm:inline">•</span>
-                                <span class="flex items-center gap-1.5">
-                                    <span
-                                        class="material-symbols-outlined text-[16px] text-secondary-fixed">school</span>
-                                    IB World School Candidate
-                                </span>
-                                <span class="hidden sm:inline">•</span>
-                                <span class="flex items-center gap-1.5">
-                                    <span
-                                        class="material-symbols-outlined text-[16px] text-primary-fixed">workspace_premium</span>
-                                    SPK Terakreditasi A (Unggul)
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                <aside class="fixed bottom-6 right-6 z-50 flex items-end flex-col gap-2 group">
+        <div
+            class="hidden group-hover:flex flex-col bg-surface-container-lowest p-3 rounded-xl shadow-[0_20px_30px_-10px_rgba(15,23,42,0.15)] max-w-xs transition-all border border-surface-container-high">
+            <span class="font-label-md text-label-md text-primary font-bold mb-1">Unity Admissions Support</span>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mb-3">Hubungi konselor akademik resmi per
+                jenjang:</p>
+            <div class="grid grid-cols-2 gap-2"><a
+                    class="flex items-center justify-center py-1.5 px-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-lg font-label-sm text-label-sm font-semibold transition-colors"
+                    href="https://wa.me/628112345801" target="_blank">Early Years</a><a
+                    class="flex items-center justify-center py-1.5 px-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-lg font-label-sm text-label-sm font-semibold transition-colors"
+                    href="https://wa.me/628112345802" target="_blank">Primary</a><a
+                    class="flex items-center justify-center py-1.5 px-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-lg font-label-sm text-label-sm font-semibold transition-colors"
+                    href="https://wa.me/628112345803" target="_blank">Middle School</a><a
+                    class="flex items-center justify-center py-1.5 px-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-lg font-label-sm text-label-sm font-semibold transition-colors"
+                    href="https://wa.me/628112345804" target="_blank">High School</a></div>
+        </div><button
+            class="flex items-center gap-2 bg-tertiary-container text-on-tertiary px-4 py-3 rounded-full shadow-[0_10px_25px_-5px_rgba(15,76,92,0.25)] hover:bg-tertiary transition-all"
+            type="button"><span class="material-symbols-outlined text-[22px]">chat</span><span
+                class="font-label-md text-label-md hidden md:inline">Admissions WhatsApp</span></button>
+    </aside>
+@endsection
+
+@push('scripts')
             <!-- Interactive JavaScript logic for Search, Accordion, and Feedback -->
             <script>
                 function toggleFaq(btnElement) {
@@ -1517,126 +1229,4 @@
                     }, 100);
                 }
             </script>
-        </div>
-    </main>
-    <aside class="fixed bottom-6 right-6 z-50 flex items-end flex-col gap-2 group">
-        <div
-            class="hidden group-hover:flex flex-col bg-surface-container-lowest p-3 rounded-xl shadow-[0_20px_30px_-10px_rgba(15,23,42,0.15)] max-w-xs transition-all border border-surface-container-high">
-            <span class="font-label-md text-label-md text-primary font-bold mb-1">Unity Admissions Support</span>
-            <p class="font-body-sm text-body-sm text-on-surface-variant mb-3">Hubungi konselor akademik resmi per
-                jenjang:</p>
-            <div class="grid grid-cols-2 gap-2"><a
-                    class="flex items-center justify-center py-1.5 px-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-lg font-label-sm text-label-sm font-semibold transition-colors"
-                    href="https://wa.me/628112345801" target="_blank">Early Years</a><a
-                    class="flex items-center justify-center py-1.5 px-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-lg font-label-sm text-label-sm font-semibold transition-colors"
-                    href="https://wa.me/628112345802" target="_blank">Primary</a><a
-                    class="flex items-center justify-center py-1.5 px-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-lg font-label-sm text-label-sm font-semibold transition-colors"
-                    href="https://wa.me/628112345803" target="_blank">Middle School</a><a
-                    class="flex items-center justify-center py-1.5 px-2 bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-lg font-label-sm text-label-sm font-semibold transition-colors"
-                    href="https://wa.me/628112345804" target="_blank">High School</a></div>
-        </div><button
-            class="flex items-center gap-2 bg-tertiary-container text-on-tertiary px-4 py-3 rounded-full shadow-[0_10px_25px_-5px_rgba(15,76,92,0.25)] hover:bg-tertiary transition-all"
-            type="button"><span class="material-symbols-outlined text-[22px]">chat</span><span
-                class="font-label-md text-label-md hidden md:inline">Admissions WhatsApp</span></button>
-    </aside>
-    <footer
-        class="w-full bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-t border-surface-container-high">
-        <div class="max-w-7xl mx-auto px-4 lg:px-8 py-12">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
-                <div class="flex flex-col gap-4"><img alt="Unity School International Logo"
-                        class="h-10 w-auto object-contain self-start"
-                        src="https://lh3.googleusercontent.com/aida/AEtjO1XxcdRx0T1hBLm-7-sUoS8JzA9oUSbxQCxtz9iYmGNxrZlJEKSb8dcWPLV3qSI5tfJ4J5z8OZ7lFFv5-jG7uLSoNSSsYVaLedzvkwtZ___j7N8dvYleblGG4mplaMiaw96W9HolH7rzOLDNkRHGruP-f28lYLyjemvrvVALmrC4vlrNfiSicSBDYNIiExBRas7gBeQhpxgsiq3aHhY16L9ins4CYVR9TdjCJ2hji5tpkTmpfzhgFfqqSUs" />
-                    <p class="font-body-sm text-body-sm text-on-surface-variant">Unity School International adalah
-                        Satuan Pendidikan Kerjasama (SPK) terdepan yang mengintegrasikan kurikulum Cambridge
-                        International, IB World School framework, dan pembentukan karakter mulia berwawasan global.</p>
-                    <div class="flex flex-col gap-2 text-on-surface-variant font-body-sm text-body-sm mt-1">
-                        <div class="flex items-start gap-2"><span
-                                class="material-symbols-outlined text-[18px] text-primary mt-0.5">pin_drop</span><span>Jl.
-                                Golden Archway No. 88, Golden Parkway District, Jakarta 12560</span></div>
-                        <div class="flex items-start gap-2"><span
-                                class="material-symbols-outlined text-[18px] text-primary mt-0.5">schedule</span><span>Admissions
-                                Lounge: Senin - Sabtu (08.00 - 16.00 WIB)</span></div>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-3"><span
-                        class="font-headline-sm text-headline-sm text-primary font-bold">Academic Divisions</span>
-                    <ul class="flex flex-col gap-2 font-body-md text-body-md text-on-surface-variant">
-                        <li><a class="hover:text-primary transition-colors flex items-center gap-2"
-                                href="#"><span
-                                    class="material-symbols-outlined text-[14px] text-secondary">arrow_forward</span>Early
-                                Years (Reggio &amp; EYFS)</a></li>
-                        <li><a class="hover:text-primary transition-colors flex items-center gap-2"
-                                href="#"><span
-                                    class="material-symbols-outlined text-[14px] text-secondary">arrow_forward</span>Primary
-                                School (Cambridge Primary)</a></li>
-                        <li><a class="hover:text-primary transition-colors flex items-center gap-2"
-                                href="#"><span
-                                    class="material-symbols-outlined text-[14px] text-secondary">arrow_forward</span>Middle
-                                School (Lower Secondary)</a></li>
-                        <li><a class="hover:text-primary transition-colors flex items-center gap-2"
-                                href="#"><span
-                                    class="material-symbols-outlined text-[14px] text-secondary">arrow_forward</span>High
-                                School (IGCSE, A-Level &amp; IB DP)</a></li>
-                    </ul>
-                </div>
-                <div class="flex flex-col gap-3"><span
-                        class="font-headline-sm text-headline-sm text-primary font-bold">Admissions Hub</span>
-                    <ul class="flex flex-col gap-2 font-body-md text-body-md text-on-surface-variant">
-                        <li><a class="hover:text-primary transition-colors flex items-center gap-2"
-                                href="#"><span
-                                    class="material-symbols-outlined text-[16px] text-on-surface-variant">download</span>Unduh
-                                Prospectus AY 2025/2026</a></li>
-                        <li><a class="hover:text-primary transition-colors flex items-center gap-2"
-                                href="#"><span
-                                    class="material-symbols-outlined text-[16px] text-on-surface-variant">rule</span>Alur
-                                Pendaftaran &amp; Checklist Berkas</a></li>
-                        <li><a class="hover:text-primary transition-colors flex items-center gap-2"
-                                href="#"><span
-                                    class="material-symbols-outlined text-[16px] text-on-surface-variant">payments</span>Tuition
-                                Fee &amp; Skema Pembayaran</a></li>
-                        <li><a class="hover:text-primary transition-colors flex items-center gap-2"
-                                href="#"><span
-                                    class="material-symbols-outlined text-[16px] text-on-surface-variant">school</span>Unity
-                                Global Merit Scholarship</a></li>
-                        <li><a class="hover:text-primary transition-colors flex items-center gap-2"
-                                href="#"><span
-                                    class="material-symbols-outlined text-[16px] text-on-surface-variant">calendar_month</span>Reservasi
-                                Private Campus Tour</a></li>
-                    </ul>
-                </div>
-                <div class="flex flex-col gap-3"><span
-                        class="font-headline-sm text-headline-sm text-primary font-bold">Direct Counselor
-                        Contact</span>
-                    <div class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant"><a
-                            class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors flex items-center justify-between"
-                            href="#"><span class="font-medium">Early Years &amp; Kindergarten</span><span
-                                class="font-label-sm text-label-sm text-tertiary font-semibold">+62
-                                811-2345-801</span></a><a
-                            class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors flex items-center justify-between"
-                            href="#"><span class="font-medium">Primary School Admissions</span><span
-                                class="font-label-sm text-label-sm text-tertiary font-semibold">+62
-                                811-2345-802</span></a><a
-                            class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors flex items-center justify-between"
-                            href="#"><span class="font-medium">Middle &amp; High School Admissions</span><span
-                                class="font-label-sm text-label-sm text-tertiary font-semibold">+62
-                                811-2345-804</span></a><a
-                            class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors flex items-center justify-between"
-                            href="#"><span class="font-medium">Bursar &amp; Main Campus Hotline</span><span
-                                class="font-label-sm text-label-sm text-primary font-semibold">+62 21
-                                555-0199</span></a></div>
-                </div>
-            </div>
-            <div
-                class="border-t border-surface-container-high pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-                <p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Unity School International. Hak
-                    Cipta Dilindungi. SPK Terakreditasi A • Cambridge Centre #ID1082 • IB World School Candidate.</p>
-                <div class="flex items-center gap-4 text-on-surface-variant font-label-sm text-label-sm"><a
-                        class="hover:text-primary transition-colors" href="#">Admissions
-                        Policy</a><span>•</span><a class="hover:text-primary transition-colors" href="#">Child
-                        Safeguarding &amp; Privacy</a></div>
-            </div>
-        </div>
-    </footer>
-</body>
-
-</html>
+@endpush
